@@ -1,0 +1,213 @@
+{
+    "segments": [
+        {
+            "start": 0.032,
+            "end": 1.524,
+            "text": " monthly का नहीं है आपको,",
+            "words": [
+                {
+                    "word": "monthly",
+                    "start": 0.032,
+                    "end": 0.441,
+                    "score": 0.906
+                },
+                {
+                    "word": "का",
+                    "start": 0.564,
+                    "end": 0.666,
+                    "score": 0.589
+                },
+                {
+                    "word": "नहीं",
+                    "start": 0.727,
+                    "end": 0.952,
+                    "score": 0.742
+                },
+                {
+                    "word": "है",
+                    "start": 1.075,
+                    "end": 1.116,
+                    "score": 0.406
+                },
+                {
+                    "word": "आपको,",
+                    "start": 1.197,
+                    "end": 1.524,
+                    "score": 0.361
+                }
+            ]
+        },
+        {
+            "start": 1.632,
+            "end": 4.628,
+            "text": " वो पता है हाँ कि minimum month 3 month का है",
+            "words": [
+                {
+                    "word": "वो",
+                    "start": 1.632,
+                    "end": 1.774,
+                    "score": 0.762
+                },
+                {
+                    "word": "पता",
+                    "start": 1.875,
+                    "end": 2.118,
+                    "score": 0.823
+                },
+                {
+                    "word": "है",
+                    "start": 2.138,
+                    "end": 2.3,
+                    "score": 0.54
+                },
+                {
+                    "word": "हाँ",
+                    "start": 2.32,
+                    "end": 2.381,
+                    "score": 0.33
+                },
+                {
+                    "word": "कि",
+                    "start": 2.482,
+                    "end": 2.685,
+                    "score": 0.74
+                },
+                {
+                    "word": "minimum",
+                    "start": 3.049,
+                    "end": 3.434,
+                    "score": 0.766
+                },
+                {
+                    "word": "month",
+                    "start": 3.454,
+                    "end": 3.677,
+                    "score": 0.963
+                },
+                {
+                    "word": "3",
+                    "start": 3.839,
+                    "end": 3.98,
+                    "score": 0.691
+                },
+                {
+                    "word": "month",
+                    "start": 4.001,
+                    "end": 4.284,
+                    "score": 0.745
+                },
+                {
+                    "word": "का",
+                    "start": 4.304,
+                    "end": 4.568,
+                    "score": 0.936
+                },
+                {
+                    "word": "है",
+                    "start": 4.588,
+                    "end": 4.628,
+                    "score": 0.5
+                }
+            ]
+        }
+    ],
+    "word_segments": [
+        {
+            "word": "monthly",
+            "start": 0.032,
+            "end": 0.441,
+            "score": 0.906
+        },
+        {
+            "word": "का",
+            "start": 0.564,
+            "end": 0.666,
+            "score": 0.589
+        },
+        {
+            "word": "नहीं",
+            "start": 0.727,
+            "end": 0.952,
+            "score": 0.742
+        },
+        {
+            "word": "है",
+            "start": 1.075,
+            "end": 1.116,
+            "score": 0.406
+        },
+        {
+            "word": "आपको,",
+            "start": 1.197,
+            "end": 1.524,
+            "score": 0.361
+        },
+        {
+            "word": "वो",
+            "start": 1.632,
+            "end": 1.774,
+            "score": 0.762
+        },
+        {
+            "word": "पता",
+            "start": 1.875,
+            "end": 2.118,
+            "score": 0.823
+        },
+        {
+            "word": "है",
+            "start": 2.138,
+            "end": 2.3,
+            "score": 0.54
+        },
+        {
+            "word": "हाँ",
+            "start": 2.32,
+            "end": 2.381,
+            "score": 0.33
+        },
+        {
+            "word": "कि",
+            "start": 2.482,
+            "end": 2.685,
+            "score": 0.74
+        },
+        {
+            "word": "minimum",
+            "start": 3.049,
+            "end": 3.434,
+            "score": 0.766
+        },
+        {
+            "word": "month",
+            "start": 3.454,
+            "end": 3.677,
+            "score": 0.963
+        },
+        {
+            "word": "3",
+            "start": 3.839,
+            "end": 3.98,
+            "score": 0.691
+        },
+        {
+            "word": "month",
+            "start": 4.001,
+            "end": 4.284,
+            "score": 0.745
+        },
+        {
+            "word": "का",
+            "start": 4.304,
+            "end": 4.568,
+            "score": 0.936
+        },
+        {
+            "word": "है",
+            "start": 4.588,
+            "end": 4.628,
+            "score": 0.5
+        }
+    ],
+    "language": "en"
+}
