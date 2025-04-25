@@ -34,7 +34,6 @@ def cli():
     parser.add_argument("--batch_size", default=8, type=int, help="the preferred batch size for inference")
     parser.add_argument("--compute_type", default="float16", type=str, choices=["float16", "float32", "int8"], help="compute type for computation")
     parser.add_argument("--use_openai_whisper", type=str2bool, default=False, help="use OpenAI Whisper from Hugging Face instead of Faster Whisper")
-    parser.add_argument("--return_token_probabilities", type=str2bool, default=False, help="Return token probabilities in the output (HF Whisper only)")
 
     parser.add_argument("--output_dir", "-o", type=str, default=".", help="directory to save the outputs")
     parser.add_argument("--output_format", "-f", type=str, default="all", choices=["all", "srt", "vtt", "txt", "tsv", "json", "aud"], help="format of the output file; if not specified, all available formats will be produced")
@@ -104,7 +103,6 @@ def cli():
     compute_type: str = args.pop("compute_type")
     verbose: bool = args.pop("verbose")
     use_openai_whisper: bool = args.pop("use_openai_whisper")
-    return_token_probabilities: bool = args.pop("return_token_probabilities")
 
     # model_flush: bool = args.pop("model_flush")
     os.makedirs(output_dir, exist_ok=True)
@@ -171,7 +169,7 @@ def cli():
         asr_options.update({
             "num_beams": asr_options.pop("beam_size"),  # Rename to match HF parameter name
             "temperature": temperature[0],  # Use first temperature value
-            "return_token_probabilities": return_token_probabilities,
+            "return_token_probabilities": True,
         })
     else:
         # Keep options for Faster Whisper only
@@ -212,7 +210,7 @@ def cli():
             vad_options={"chunk_size":chunk_size, "vad_onset": vad_onset, "vad_offset": vad_offset}, 
             task=task,
             local_files_only=model_cache_only,
-            return_token_probabilities=return_token_probabilities
+            return_token_probabilities=use_openai_whisper
         )
     else:
         print("Using Faster Whisper model...")
@@ -264,7 +262,7 @@ def cli():
 
             # Extract probabilities from segments before alignment if present
             segment_probabilities = {}
-            if return_token_probabilities:
+            if use_openai_whisper:
                 for i, segment in enumerate(result["segments"]):
                     if "probabilities" in segment:
                         segment_probabilities[i] = segment["probabilities"]
@@ -284,12 +282,12 @@ def cli():
                     interpolate_method=interpolate_method,
                     return_char_alignments=return_char_alignments,
                     print_progress=print_progress,
-                    return_token_probabilities=return_token_probabilities,
+                    return_token_probabilities=use_openai_whisper,
                     language=result.get("language"),
                     language_probability=result.get("language_probability"),
                 )
                 # Restore token probabilities after alignment if available
-                if return_token_probabilities and segment_probabilities:
+                if use_openai_whisper and segment_probabilities:
                     print("Preserving token probabilities in aligned segments...")
                     for i, segment in enumerate(result["segments"]):
                         if i in segment_probabilities:
@@ -319,7 +317,7 @@ def cli():
     for result, audio_path in results:
         
         # Ensure token probabilities are properly included when using OpenAI Whisper with return_token_probabilities
-        if use_openai_whisper and return_token_probabilities:
+        if use_openai_whisper:
             # Check if token probabilities exist in segments and preserve them
             # This makes sure the token probabilities make it into the final output
             preserve_tokens = False
