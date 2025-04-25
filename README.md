@@ -341,5 +341,5 @@ If you use this in your research, please cite the paper:
 
 # Run on Example:
   ```
-  smart-whisper examples/example.wav --use_openai_model --return_token_probabilities
+  smart-whisper examples/example.wav --use_openai_model
   ```
