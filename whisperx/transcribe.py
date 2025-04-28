@@ -286,12 +286,12 @@ def cli():
                     language=result.get("language"),
                     language_probability=result.get("language_probability"),
                 )
-                # Restore token probabilities after alignment if available
-                if use_openai_whisper and segment_probabilities:
-                    print("Preserving token probabilities in aligned segments...")
-                    for i, segment in enumerate(result["segments"]):
-                        if i in segment_probabilities:
-                            segment["probabilities"] = [{"token": t, "probability": p} for t, p in segment_probabilities[i].items()]
+                # # Restore token probabilities after alignment if available
+                # if use_openai_whisper and segment_probabilities:
+                #     print("Preserving token probabilities in aligned segments...")
+                #     for i, segment in enumerate(result["segments"]):
+                #         if i in segment_probabilities:
+                #             segment["probabilities"] = [{"token": t, "probability": p} for t, p in segment_probabilities[i].items()]
 
             results.append((result, audio_path))
 

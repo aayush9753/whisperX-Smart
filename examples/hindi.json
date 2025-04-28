@@ -3,7 +3,7 @@
         {
             "start": 0.032,
             "end": 1.524,
-            "text": " monthly का नहीं है आपको,",
+            "text": "monthly का नहीं है आपको,",
             "words": [
                 {
                     "word": "monthly",
@@ -15,7 +15,7 @@
                     "word": "का",
                     "start": 0.564,
                     "end": 0.666,
-                    "score": 0.589
+                    "score": 0.588
                 },
                 {
                     "word": "नहीं",
@@ -35,18 +35,72 @@
                     "end": 1.524,
                     "score": 0.361
                 }
+            ],
+            "token_probabilities": [
+                {
+                    "token": " monthly",
+                    "probability": 0.594
+                },
+                {
+                    "token": " क",
+                    "probability": 0.998
+                },
+                {
+                    "token": "ा",
+                    "probability": 0.99
+                },
+                {
+                    "token": " �",
+                    "probability": 0.914
+                },
+                {
+                    "token": "�",
+                    "probability": 1.0
+                },
+                {
+                    "token": "ह",
+                    "probability": 0.601
+                },
+                {
+                    "token": "ी",
+                    "probability": 1.0
+                },
+                {
+                    "token": "ं",
+                    "probability": 0.993
+                },
+                {
+                    "token": " ह",
+                    "probability": 1.0
+                },
+                {
+                    "token": "ै",
+                    "probability": 1.0
+                },
+                {
+                    "token": "क",
+                    "probability": 0.988
+                },
+                {
+                    "token": "ो",
+                    "probability": 0.977
+                },
+                {
+                    "token": ",",
+                    "probability": 0.516
+                }
             ]
         },
         {
             "start": 1.632,
             "end": 4.628,
-            "text": " वो पता है हाँ कि minimum month 3 month का है",
+            "text": "वो पता है हाँ कि minimum month 3 month का है।",
             "words": [
                 {
                     "word": "वो",
                     "start": 1.632,
                     "end": 1.774,
-                    "score": 0.762
+                    "score": 0.761
                 },
                 {
                     "word": "पता",
@@ -99,14 +153,64 @@
                 {
                     "word": "का",
                     "start": 4.304,
-                    "end": 4.568,
-                    "score": 0.936
+                    "end": 4.547,
+                    "score": 0.93
                 },
                 {
-                    "word": "है",
-                    "start": 4.588,
+                    "word": "है।",
+                    "start": 4.568,
                     "end": 4.628,
-                    "score": 0.5
+                    "score": 0.333
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": " �",
+                    "probability": 0.996
+                },
+                {
+                    "token": "�",
+                    "probability": 1.0
+                },
+                {
+                    "token": "ो",
+                    "probability": 0.93
+                },
+                {
+                    "token": "त",
+                    "probability": 0.997
+                },
+                {
+                    "token": "ा",
+                    "probability": 0.999
+                },
+                {
+                    "token": " ह",
+                    "probability": 0.999
+                },
+                {
+                    "token": "ै",
+                    "probability": 1.0
+                },
+                {
+                    "token": " क",
+                    "probability": 0.998
+                },
+                {
+                    "token": "ि",
+                    "probability": 0.865
+                },
+                {
+                    "token": " minimum",
+                    "probability": 0.866
+                },
+                {
+                    "token": " month",
+                    "probability": 0.951
+                },
+                {
+                    "token": " 3",
+                    "probability": 0.703
                 }
             ]
         }
@@ -122,7 +226,7 @@
             "word": "का",
             "start": 0.564,
             "end": 0.666,
-            "score": 0.589
+            "score": 0.588
         },
         {
             "word": "नहीं",
@@ -146,7 +250,7 @@
             "word": "वो",
             "start": 1.632,
             "end": 1.774,
-            "score": 0.762
+            "score": 0.761
         },
         {
             "word": "पता",
@@ -199,15 +303,16 @@
         {
             "word": "का",
             "start": 4.304,
-            "end": 4.568,
-            "score": 0.936
+            "end": 4.547,
+            "score": 0.93
         },
         {
-            "word": "है",
-            "start": 4.588,
+            "word": "है।",
+            "start": 4.568,
             "end": 4.628,
-            "score": 0.5
+            "score": 0.333
         }
     ],
-    "language": "en"
+    "language": "hi",
+    "language_probability": 0.936
 }
