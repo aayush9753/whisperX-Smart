@@ -200,21 +200,11 @@ class OpenAIWhisperPipeline:
         }
         
         # Set language and task
-        try:
-            forced_decoder_ids = self.processor.get_decoder_prompt_ids(
-                task="transcribe", 
-                language=language, 
-                no_timestamps=self.options.without_timestamps
-            )
-        except ValueError:
-            # If language is not supported, try with English
-            print(f"Warning: Language {language} not supported by model. Falling back to English.")
-            forced_decoder_ids = self.processor.get_decoder_prompt_ids(
-                task="transcribe", 
-                language="en", 
-                no_timestamps=self.options.without_timestamps
-            )
-            language = "en"
+        forced_decoder_ids = self.processor.get_decoder_prompt_ids(
+            task="transcribe", 
+            language=language, 
+            no_timestamps=self.options.without_timestamps
+        )
         
         # Suppress tokens if needed
         if self.suppress_numerals:
@@ -257,7 +247,7 @@ class OpenAIWhisperPipeline:
             
             return {
                 "text": transcription.strip(),
-                "probabilities": dict([(token["token"], token["probability"]) for token in token_probs])
+                "probabilities": dict([(token["token"], token["probability"]) for token in token_probs]),
             }
         else:
             # For regular mode, just decode and return the text
@@ -300,10 +290,6 @@ class OpenAIWhisperPipeline:
             offset=self._vad_params["vad_offset"],
         )
         
-        # Detect language if not provided
-        detected_language = self.detect_language(audio) if not language else (language, 1.0)
-        language, probability = detected_language
-        
         segments: List[SingleSegment] = []
         total_segments = len(vad_segments)
         
@@ -317,7 +303,13 @@ class OpenAIWhisperPipeline:
             end_frame = int(segment['end'] * SAMPLE_RATE)
             audio_segment = audio[start_frame:end_frame]
             
-            result = self.transcribe_segment(audio_segment, language)
+            # Detect language for this segment if not provided
+            if language is None:
+                segment_language, language_probability = self.detect_language(audio_segment)
+            else:
+                segment_language, language_probability = language, 1.0
+            
+            result = self.transcribe_segment(audio_segment, segment_language)
             
             if verbose:
                 if isinstance(result, dict):
@@ -331,16 +323,30 @@ class OpenAIWhisperPipeline:
                     "text": result["text"],
                     "start": round(segment['start'], 3),
                     "end": round(segment['end'], 3),
-                    "probabilities": result["probabilities"]
+                    "probabilities": result["probabilities"],
+                    "language": segment_language,
+                    "language_probability": language_probability
                 })
             else:
                 segments.append({
                     "text": result,
                     "start": round(segment['start'], 3),
-                    "end": round(segment['end'], 3)
+                    "end": round(segment['end'], 3),
+                    "language": segment_language,
+                    "language_probability": language_probability
                 })
             
-        return {"segments": segments, "language": language, "language_probability": probability}
+        # Get the most common language across all segments as the overall language
+        if language is None:
+            language_counts = {}
+            for segment in segments:
+                lang = segment["language"]
+                language_counts[lang] = language_counts.get(lang, 0) + 1
+            overall_language = max(language_counts.items(), key=lambda x: x[1])[0]
+        else:
+            overall_language = language
+            
+        return {"segments": segments, "language": overall_language, "language_probability": 1.0}
 
 
 def load_model(

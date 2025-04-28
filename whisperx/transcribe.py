@@ -2,7 +2,7 @@ import argparse
 import gc
 import os
 import warnings
-
+import time
 import numpy as np
 import torch
 
@@ -229,6 +229,7 @@ def cli():
             threads=faster_whisper_threads
         )
 
+    start_time = time.time()
     for audio_path in args.pop("audio"):
         audio = load_audio(audio_path)
         # >> VAD & ASR
@@ -242,6 +243,7 @@ def cli():
         )
         results.append((result, audio_path))
 
+    print(f"Transcription Result Returned: {time.time() - start_time} seconds")
     # Unload Whisper and VAD
     del model
     gc.collect()
