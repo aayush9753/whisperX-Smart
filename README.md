@@ -334,7 +334,7 @@ If you use this in your research, please cite the paper:
 
 # Installation
   ```
-pip install git+https://github.com/aayush9753/whisperX-Smart.git --force-reinstall --no-cache-dir
+pip install git+https://github.com/aayush9753/whisperX-Smart.git
   ```
 
 # Run on Example:
