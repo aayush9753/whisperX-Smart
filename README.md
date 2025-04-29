@@ -334,11 +334,7 @@ If you use this in your research, please cite the paper:
 
 # Installation
   ```
-  git clone https://github.com/aayush9753/whisperX-Smart.git
-  cd whisperX-Smart
-  conda create -n whisperx python=3.12 # Tested with Python 3.12 and Cuda 12.1 cuDNN 8.2
-  conda activate whisperx
-  pip install  -e .
+pip install git+https://github.com/aayush9753/whisperX-Smart.git --force-reinstall --no-cache-dir
   ```
 
 # Run on Example:
