@@ -25,6 +25,15 @@ from whisperx.types import SingleSegment, TranscriptionResult
 from whisperx.vads import Vad, Silero, Pyannote, SileroCustom
 from tqdm import tqdm
 
+# List of Indic languages supported by the model
+INDIC_LANGUAGES = [
+    # ISO 639-1 codes
+    "as", "bn", "gu", "hi", "kn", "ml", "mr", "ne", "or", "pa", "sa", "sd", "si", "ta", "te", "ur",
+    # English names Whisper may return
+    "assamese", "bengali", "gujarati", "hindi", "kannada", "malayalam", "marathi", "nepali",
+    "odia", "oriya", "punjabi", "panjabi", "sanskrit", "sindhi", "sinhala", "tamil", "telugu", "urdu"
+]
+
 
 def find_numeral_symbol_tokens(tokenizer):
     """
@@ -274,7 +283,7 @@ class FasterWhisperPipeline(Pipeline):
         chunk_size: int = 30,
         print_progress: bool = False,
         combined_progress: bool = False,
-        verbose: bool = False,
+        verbose: bool = False
     ) -> TranscriptionResult:
         """
         Transcribe audio using the model.
@@ -315,7 +324,7 @@ class FasterWhisperPipeline(Pipeline):
         )
         
         # If language not specified, detect language for each segment
-        if language is None:
+        if language is None and self.preset_language is None:
             # First merge segments with small gaps for better language detection
             merged_segments = []
             current_segment = None
@@ -358,6 +367,14 @@ class FasterWhisperPipeline(Pipeline):
                 
                 # Detect language for this merged segment
                 segment_language, segment_language_probability = self.detect_language(segment_audio)
+                if segment_language in ["en", "hi"]:
+                    pass
+                elif segment_language in INDIC_LANGUAGES:
+                    segment_language = "hi"
+                    segment_language_probability = 0
+                else:
+                    segment_language = "en"
+                    segment_language_probability = 0
                 
                 # Assign language to all original segments in this merged segment
                 for original_seg in merged_seg['original_segments']:
