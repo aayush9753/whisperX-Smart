@@ -83,6 +83,7 @@ class SingleSegment(TypedDict):
     start: float
     end: float
     text: str
+    language: str
 
 
 class SingleAlignedSegment(TypedDict):

@@ -23,6 +23,7 @@ from transformers.pipelines.pt_utils import PipelineIterator
 from whisperx.audio import N_SAMPLES, SAMPLE_RATE, load_audio, log_mel_spectrogram
 from whisperx.types import SingleSegment, TranscriptionResult
 from whisperx.vads import Vad, Silero, Pyannote, SileroCustom
+from tqdm import tqdm
 
 
 def find_numeral_symbol_tokens(tokenizer):
@@ -267,32 +268,44 @@ class FasterWhisperPipeline(Pipeline):
         self,
         audio: Union[str, np.ndarray],
         batch_size: Optional[int] = None,
-        num_workers=0,
+        num_workers: int = 0,
         language: Optional[str] = None,
         task: Optional[str] = None,
-        chunk_size=30,
-        print_progress=False,
-        combined_progress=False,
-        verbose=False,
+        chunk_size: int = 30,
+        print_progress: bool = False,
+        combined_progress: bool = False,
+        verbose: bool = False,
     ) -> TranscriptionResult:
+        """
+        Transcribe audio using the model.
+        
+        Args:
+            audio: Path to audio file or audio array
+            batch_size: Batch size for processing
+            num_workers: Number of workers for data loading
+            language: Language code (auto-detected if None)
+            task: Task to perform (transcribe or translate)
+            chunk_size: Size of audio chunks in seconds
+            print_progress: Whether to print progress
+            combined_progress: Whether to show combined progress
+            verbose: Whether to print detailed information
+            
+        Returns:
+            List of transcribed segments with timing information
+        """
+        # Load audio if path is provided
         if isinstance(audio, str):
             audio = load_audio(audio)
 
-        def data(audio, segments):
-            for seg in segments:
-                f1 = int(seg['start'] * SAMPLE_RATE)
-                f2 = int(seg['end'] * SAMPLE_RATE)
-                # print(f2-f1)
-                yield {'inputs': audio[f1:f2]}
-
-        # Pre-process audio and merge chunks as defined by the respective VAD child class 
-        # In case vad_model is manually assigned (see 'load_model') follow the functionality of pyannote toolkit
+        # Pre-process audio based on VAD model type
         if issubclass(type(self.vad_model), Vad):
             waveform = self.vad_model.preprocess_audio(audio)
-            merge_chunks =  self.vad_model.merge_chunks
+            merge_chunks = self.vad_model.merge_chunks
         else:
             waveform = Pyannote.preprocess_audio(audio)
             merge_chunks = Pyannote.merge_chunks
+            
+        # Get voice segments from VAD model
         vad_segments = self.vad_model({"waveform": waveform, "sample_rate": SAMPLE_RATE})
         vad_segments = merge_chunks(
             vad_segments,
@@ -300,68 +313,149 @@ class FasterWhisperPipeline(Pipeline):
             onset=self._vad_params["vad_onset"],
             offset=self._vad_params["vad_offset"],
         )
-        if self.tokenizer is None:
-            language = language or self.detect_language(audio)
-            task = task or "transcribe"
+        
+        # If language not specified, detect language for each segment
+        if language is None:
+            # First merge segments with small gaps for better language detection
+            merged_segments = []
+            current_segment = None
+            merge_threshold = 2  # seconds
+            
+            for seg in vad_segments:
+                if current_segment is None:
+                    current_segment = {
+                        'start': seg['start'],
+                        'end': seg['end'],
+                        'original_segments': [seg]
+                    }
+                else:
+                    # If gap is less than threshold seconds
+                    if seg['start'] - current_segment['end'] <= merge_threshold:
+                        # Merge by extending end time
+                        current_segment['end'] = seg['end']
+                        current_segment['original_segments'].append(seg)
+                    else:
+                        # Add current segment to merged list and start a new one
+                        merged_segments.append(current_segment)
+                        current_segment = {
+                            'start': seg['start'],
+                            'end': seg['end'],
+                            'original_segments': [seg]
+                        }
+
+            # Add the last segment if it exists
+            if current_segment is not None:
+                merged_segments.append(current_segment)
+            
+            # Detect language for each merged segment
+            language_segments = {}
+            for merged_seg in tqdm(merged_segments, desc="Detecting language for segments"):
+                # Extract audio for merged segment
+                f1 = int(merged_seg['start'] * SAMPLE_RATE)
+                f2 = int(merged_seg['end'] * SAMPLE_RATE)
+                segment_audio = audio[f1:f2]
+                
+                # Detect language for this merged segment
+                segment_language = self.detect_language(segment_audio)
+                
+                # Assign language to all original segments in this merged segment
+                for original_seg in merged_seg['original_segments']:
+                    if segment_language not in language_segments:
+                        language_segments[segment_language] = []
+                    
+                    language_segments[segment_language].append(original_seg)
+        else:
+            # Use specified language for all segments
+            language_segments = {language: vad_segments}
+            
+        audio_language = max(language_segments.keys(), key=lambda k: len(language_segments[k]))
+        
+        # Set default task if not specified
+        task = task or "transcribe"
+        
+        # Process each language group separately
+        all_segments = []
+        for lang, segments in language_segments.items():
+            # Set up tokenizer for this language
             self.tokenizer = Tokenizer(
                 self.model.hf_tokenizer,
                 self.model.model.is_multilingual,
                 task=task,
-                language=language,
+                language=lang,
             )
-        else:
-            language = language or self.tokenizer.language_code
-            task = task or self.tokenizer.task
-            if task != self.tokenizer.task or language != self.tokenizer.language_code:
-                self.tokenizer = Tokenizer(
-                    self.model.hf_tokenizer,
-                    self.model.model.is_multilingual,
-                    task=task,
-                    language=language,
+            
+            # Handle numeral suppression if enabled
+            previous_suppress_tokens = None
+            if self.suppress_numerals:
+                previous_suppress_tokens = self.options.suppress_tokens
+                numeral_symbol_tokens = find_numeral_symbol_tokens(self.tokenizer)
+                print(f"Suppressing numeral and symbol tokens")
+                new_suppressed_tokens = list(set(numeral_symbol_tokens + self.options.suppress_tokens))
+                self.options = replace(self.options, suppress_tokens=new_suppressed_tokens)
+
+            # Helper function to yield audio segments
+            def data(segments_to_process):
+                for seg in segments_to_process:
+                    f1 = int(seg['start'] * SAMPLE_RATE)
+                    f2 = int(seg['end'] * SAMPLE_RATE)
+                    yield {'inputs': audio[f1:f2]}
+
+            # Process segments
+            lang_segments = []
+            batch_size = batch_size or self._batch_size
+            total_segments = len(vad_segments)
+            
+            for idx, out in enumerate(tqdm(self.__call__(
+                data(segments), 
+                batch_size=batch_size, 
+                num_workers=num_workers
+            ), total=len(segments), desc="Processing segments of language: " + lang)):
+                # Show progress if requested
+                if print_progress:
+                    base_progress = ((idx + 1) / total_segments) * 100
+                    percent_complete = base_progress / 2 if combined_progress else base_progress
+                    print(f"Progress: {percent_complete:.2f}%...")
+                
+                # Extract text from output
+                text = out['text']
+                if batch_size in [0, 1, None]:
+                    text = text[0]
+                    
+                # Show verbose output if requested
+                if verbose:
+                    print(f"Transcript: [{round(segments[idx]['start'], 3)} --> {round(segments[idx]['end'], 3)}] {text}")
+                
+                lang_segments.append(
+                    {
+                        "text": text,
+                        "start": round(segments[idx]['start'], 3),
+                        "end": round(segments[idx]['end'], 3),
+                        "language": lang
+                    }
                 )
 
-        if self.suppress_numerals:
-            previous_suppress_tokens = self.options.suppress_tokens
-            numeral_symbol_tokens = find_numeral_symbol_tokens(self.tokenizer)
-            print(f"Suppressing numeral and symbol tokens")
-            new_suppressed_tokens = numeral_symbol_tokens + self.options.suppress_tokens
-            new_suppressed_tokens = list(set(new_suppressed_tokens))
-            self.options = replace(self.options, suppress_tokens=new_suppressed_tokens)
-
-        segments: List[SingleSegment] = []
-        batch_size = batch_size or self._batch_size
-        total_segments = len(vad_segments)
-        for idx, out in enumerate(self.__call__(data(audio, vad_segments), batch_size=batch_size, num_workers=num_workers)):
-            if print_progress:
-                base_progress = ((idx + 1) / total_segments) * 100
-                percent_complete = base_progress / 2 if combined_progress else base_progress
-                print(f"Progress: {percent_complete:.2f}%...")
-            text = out['text']
-            if batch_size in [0, 1, None]:
-                text = text[0]
-            if verbose:
-                print(f"Transcript: [{round(vad_segments[idx]['start'], 3)} --> {round(vad_segments[idx]['end'], 3)}] {text}")
-            segments.append(
-                {
-                    "text": text,
-                    "start": round(vad_segments[idx]['start'], 3),
-                    "end": round(vad_segments[idx]['end'], 3)
-                }
-            )
-
-        # revert the tokenizer if multilingual inference is enabled
-        if self.preset_language is None:
+            # Clean up
             self.tokenizer = None
+            
+            # Restore original suppress tokens if needed
+            if self.suppress_numerals and previous_suppress_tokens is not None:
+                self.options = replace(self.options, suppress_tokens=previous_suppress_tokens)
 
-        # revert suppressed tokens if suppress_numerals is enabled
-        if self.suppress_numerals:
-            self.options = replace(self.options, suppress_tokens=previous_suppress_tokens)
-
-        return {"segments": segments, "language": language}
-
+            all_segments.extend(lang_segments)
+        
+        # Sort all segments by start time
+        all_segments.sort(key=lambda x: x['start'])
+        
+        # Create the final result dictionary
+        result = {
+            "segments": all_segments,
+            "language": audio_language,
+        }
+        
+        return result
+        
+        
     def detect_language(self, audio: np.ndarray) -> str:
-        if audio.shape[0] < N_SAMPLES:
-            print("Warning: audio is shorter than 30s, language detection may be inaccurate.")
         model_n_mels = self.model.feat_kwargs.get("feature_size")
         segment = log_mel_spectrogram(audio[: N_SAMPLES],
                                       n_mels=model_n_mels if model_n_mels is not None else 80,
@@ -370,7 +464,6 @@ class FasterWhisperPipeline(Pipeline):
         results = self.model.model.detect_language(encoder_output)
         language_token, language_probability = results[0][0]
         language = language_token[2:-2]
-        print(f"Detected language: {language} ({language_probability:.2f}) in first 30s of audio...")
         return language
 
 
