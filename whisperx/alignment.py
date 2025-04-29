@@ -21,7 +21,6 @@ from whisperx.types import (
     SingleAlignedSegment,
     SingleWordSegment,
     SegmentData,
-    TokenProbability,
 )
 from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters
 

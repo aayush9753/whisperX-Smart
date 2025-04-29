@@ -169,7 +169,6 @@ def cli():
         asr_options.update({
             "num_beams": asr_options.pop("beam_size"),  # Rename to match HF parameter name
             "temperature": temperature[0],  # Use first temperature value
-            "return_token_probabilities": True,
         })
     else:
         # Keep options for Faster Whisper only
@@ -209,8 +208,7 @@ def cli():
             vad_method=vad_method, 
             vad_options={"chunk_size":chunk_size, "vad_onset": vad_onset, "vad_offset": vad_offset}, 
             task=task,
-            local_files_only=model_cache_only,
-            return_token_probabilities=use_openai_whisper
+            local_files_only=model_cache_only
         )
     else:
         print("Using Faster Whisper model...")
@@ -262,13 +260,6 @@ def cli():
                 # lazily load audio from part 1
                 input_audio = audio
 
-            # Extract probabilities from segments before alignment if present
-            segment_probabilities = {}
-            if use_openai_whisper:
-                for i, segment in enumerate(result["segments"]):
-                    if "probabilities" in segment:
-                        segment_probabilities[i] = segment["probabilities"]
-
             if align_model is not None and len(result["segments"]) > 0:
                 if result.get("language", "en") != align_metadata["language"]:
                     # load new language
@@ -284,16 +275,9 @@ def cli():
                     interpolate_method=interpolate_method,
                     return_char_alignments=return_char_alignments,
                     print_progress=print_progress,
-                    return_token_probabilities=use_openai_whisper,
                     language=result.get("language"),
                     language_probability=result.get("language_probability"),
                 )
-                # # Restore token probabilities after alignment if available
-                # if use_openai_whisper and segment_probabilities:
-                #     print("Preserving token probabilities in aligned segments...")
-                #     for i, segment in enumerate(result["segments"]):
-                #         if i in segment_probabilities:
-                #             segment["probabilities"] = [{"token": t, "probability": p} for t, p in segment_probabilities[i].items()]
 
             results.append((result, audio_path))
 
@@ -317,20 +301,6 @@ def cli():
             
     # >> Write
     for result, audio_path in results:
-        
-        # Ensure token probabilities are properly included when using OpenAI Whisper with return_token_probabilities
-        if use_openai_whisper:
-            # Check if token probabilities exist in segments and preserve them
-            # This makes sure the token probabilities make it into the final output
-            preserve_tokens = False
-            for segment in result.get("segments", []):
-                if "tokens" in segment:
-                    preserve_tokens = True
-                    break
-                    
-            if preserve_tokens:
-                print("Including token probability information in output...")
-        
         writer(result, audio_path, writer_args)
 
 if __name__ == "__main__":

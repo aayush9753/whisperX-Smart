@@ -6,22 +6,7 @@ throughout WhisperX for representing transcription and alignment results.
 """
 
 from typing import TypedDict, Optional, List, Tuple
-
-
-class TokenProbability(TypedDict):
-    """
-    Probability data for a single token.
-    
-    Attributes
-    ----------
-    token : str
-        The text representation of the token
-    probability : float
-        The probability of the token in the range [0.0, 1.0]
-    """
-    token: str
-    probability: float
-
+from dataclasses import dataclass
 
 class SingleWordSegment(TypedDict):
     """
@@ -65,24 +50,14 @@ class SingleCharSegment(TypedDict):
     score: float
 
 
-class SingleSegment(TypedDict):
-    """
-    A single segment (typically a sentence or phrase) of a speech.
-    
-    This represents the basic unit of transcription before word-level alignment.
-    
-    Attributes
-    ----------
-    start : float
-        Start time of the segment in seconds
-    end : float
-        End time of the segment in seconds
-    text : str
-        Transcribed text for the segment
-    """
+@dataclass
+class SingleSegment:
+    """A single segment of transcribed audio."""
+    text: str
     start: float
     end: float
-    text: str
+    language: str
+    language_probability: float
 
 
 class SingleAlignedSegment(TypedDict):
@@ -99,8 +74,6 @@ class SingleAlignedSegment(TypedDict):
         End time of the segment in seconds
     text : str
         Transcribed text for the segment
-    token_probabilities : Optional[List[TokenProbability]]
-        List of token probabilities if requested during transcription
     words : List[SingleWordSegment]
         List of words with timing information
     chars : Optional[List[SingleCharSegment]]
@@ -109,7 +82,6 @@ class SingleAlignedSegment(TypedDict):
     start: float
     end: float
     text: str
-    token_probabilities: Optional[List[TokenProbability]]
     words: List[SingleWordSegment]
     chars: Optional[List[SingleCharSegment]]
 
@@ -138,21 +110,9 @@ class SegmentData(TypedDict):
     sentence_spans: List[Tuple[int, int]]  # Start and end indices of sentences
 
 
-class TranscriptionResult(TypedDict):
-    """
-    Result of the initial transcription process.
-    
-    Contains segments with timing information but without word-level alignment.
-    
-    Attributes
-    ----------
-    segments : List[SingleSegment]
-        List of segments with timing information
-    language : str
-        Detected or specified language code
-    language_probability : float
-        Probability score of the detected language
-    """
+@dataclass
+class TranscriptionResult:
+    """The result of a transcription."""
     segments: List[SingleSegment]
     language: str
     language_probability: float

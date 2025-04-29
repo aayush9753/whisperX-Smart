@@ -22,7 +22,6 @@ class OpenAIWhisperOptions:
     length_penalty: float = 1.0
     suppress_tokens: List[int] = field(default_factory=lambda: [-1])
     without_timestamps: bool = True
-    return_token_probabilities: bool = False
     max_new_tokens: Optional[int] = None
 
 
@@ -182,7 +181,7 @@ class OpenAIWhisperPipeline:
                 print(f"Could not detect language, defaulting to English. Token: {language_token_id}")
                 return "en", 1.0
 
-    def transcribe_segment(self, audio_segment: np.ndarray, language: str) -> Union[str, Dict[str, Any]]:
+    def transcribe_segment(self, audio_segment: np.ndarray, language: str) -> str:
         """Transcribe a single audio segment."""
         features = self.preprocess_audio(audio_segment)
         input_features = features.unsqueeze(0)  # Add batch dimension
@@ -190,13 +189,10 @@ class OpenAIWhisperPipeline:
         gen_kwargs = {
             "max_new_tokens": self.options.max_new_tokens,
             "num_beams": self.options.num_beams,
-            "num_return_sequences": 1,
             "temperature": self.options.temperature,
             "repetition_penalty": self.options.repetition_penalty,
             "no_repeat_ngram_size": self.options.no_repeat_ngram_size,
             "length_penalty": self.options.length_penalty,
-            "return_dict_in_generate": self.options.return_token_probabilities,
-            "output_scores": self.options.return_token_probabilities,
         }
         
         # Set language and task
@@ -223,39 +219,68 @@ class OpenAIWhisperPipeline:
                 **gen_kwargs
             )
             
-        # Process output depending on whether probabilities are requested
-        if self.options.return_token_probabilities:
-            sequences = outputs.sequences
-            scores = outputs.scores
-        
-            # Process sequences and scores to get tokens and probabilities
-            # Extract the first sequence (we only generate one)
-            sequence = sequences[0].cpu().tolist()
-            
-            # Remove special tokens for the final text
-            transcription = self.processor.decode(sequence, skip_special_tokens=True)
-            
-            # Process token probabilities
-            token_probs = []
-            for i, token in enumerate(sequences[0].cpu().tolist()[4:-1]): # Ignore special tokens (4 in beginning and 1 in end)
-                decoded_token = self.processor.decode([token])
-                probs = torch.nn.functional.softmax(scores[i], dim=-1)
-                token_probs.append({
-                    "token": decoded_token,
-                    "probability": round(probs[0, token].item(), 3)
-                })
-            
-            return {
-                "text": transcription.strip(),
-                "probabilities": dict([(token["token"], token["probability"]) for token in token_probs]),
-            }
+        # Decode and return the text
+        if isinstance(outputs, torch.Tensor):
+            transcription = self.processor.batch_decode(outputs, skip_special_tokens=True)[0]
         else:
-            # For regular mode, just decode and return the text
-            if isinstance(outputs, torch.Tensor):
-                transcription = self.processor.batch_decode(outputs, skip_special_tokens=True)[0]
-            else:
-                transcription = self.processor.batch_decode(outputs.sequences, skip_special_tokens=True)[0]
-            return transcription.strip()
+            transcription = self.processor.batch_decode(outputs.sequences, skip_special_tokens=True)[0]
+        return transcription.strip()
+
+    def transcribe_segment_batched(self, audio_segments: List[np.ndarray], languages: List[str]) -> List[str]:
+        """Transcribe a batch of audio segments with potentially different languages."""
+        # Preprocess all audio segments
+        features = []
+        for audio_segment in audio_segments:
+            feature = self.preprocess_audio(audio_segment)
+            features.append(feature)
+        
+        # Stack features into a batch
+        input_features = torch.stack(features)
+        
+        # Configure generation parameters from options
+        gen_kwargs = {
+            "max_new_tokens": self.options.max_new_tokens,
+            "num_beams": self.options.num_beams,
+            "num_return_sequences": 1,
+            "temperature": self.options.temperature,
+            "repetition_penalty": self.options.repetition_penalty,
+            "no_repeat_ngram_size": self.options.no_repeat_ngram_size,
+            "length_penalty": self.options.length_penalty,
+        }
+        
+        # Get decoder prompt IDs for each language in the batch
+        forced_decoder_ids_list = []
+        for language in languages:
+            decoder_ids = self.processor.get_decoder_prompt_ids(
+                task="transcribe", 
+                language=language, 
+                no_timestamps=self.options.without_timestamps
+            )
+            forced_decoder_ids_list.append(decoder_ids)
+        
+        # Suppress tokens if needed
+        if self.suppress_numerals:
+            suppress_tokens = list(set(self.options.suppress_tokens + self.numeral_symbol_tokens))
+        else:
+            suppress_tokens = self.options.suppress_tokens
+            
+        if suppress_tokens:
+            gen_kwargs["suppress_tokens"] = suppress_tokens
+            
+        # Generate transcriptions for the batch
+        with torch.no_grad():
+            outputs = self.model.generate(
+                input_features,
+                forced_decoder_ids=forced_decoder_ids_list,
+                **gen_kwargs
+            )
+            
+        # Decode and return the texts
+        if isinstance(outputs, torch.Tensor):
+            transcriptions = self.processor.batch_decode(outputs, skip_special_tokens=True)
+        else:
+            transcriptions = self.processor.batch_decode(outputs.sequences, skip_special_tokens=True)
+        return [text.strip() for text in transcriptions]
 
     def transcribe(
         self,
@@ -293,47 +318,51 @@ class OpenAIWhisperPipeline:
         segments: List[SingleSegment] = []
         total_segments = len(vad_segments)
         
-        for idx, segment in enumerate(vad_segments):
+        # Process segments in batches
+        batch_size = batch_size or 1
+        for batch_start in range(0, total_segments, batch_size):
+            batch_end = min(batch_start + batch_size, total_segments)
+            batch_segments = vad_segments[batch_start:batch_end]
+            
             if print_progress:
-                base_progress = ((idx + 1) / total_segments) * 100
+                base_progress = (batch_end / total_segments) * 100
                 percent_complete = base_progress / 2 if combined_progress else base_progress
                 print(f"Progress: {percent_complete:.2f}%...")
+            
+            # Extract audio segments for the batch
+            audio_segments = []
+            segment_languages = []
+            segment_language_probs = []
+            
+            for segment in batch_segments:
+                start_frame = int(segment['start'] * SAMPLE_RATE)
+                end_frame = int(segment['end'] * SAMPLE_RATE)
+                audio_segments.append(audio[start_frame:end_frame])
                 
-            start_frame = int(segment['start'] * SAMPLE_RATE)
-            end_frame = int(segment['end'] * SAMPLE_RATE)
-            audio_segment = audio[start_frame:end_frame]
-            
-            # Detect language for this segment if not provided
-            if language is None:
-                segment_language, language_probability = self.detect_language(audio_segment)
-            else:
-                segment_language, language_probability = language, 1.0
-            
-            result = self.transcribe_segment(audio_segment, segment_language)
-            
-            if verbose:
-                if isinstance(result, dict):
-                    print(f"Transcript: [{round(segment['start'], 3)} --> {round(segment['end'], 3)}] {result['text']}")
+                # Detect language for each segment if not provided
+                if language is None:
+                    seg_lang, seg_prob = self.detect_language(audio_segments[-1])
+                    segment_languages.append(seg_lang)
+                    segment_language_probs.append(seg_prob)
                 else:
-                    print(f"Transcript: [{round(segment['start'], 3)} --> {round(segment['end'], 3)}] {result}")
+                    segment_languages.append(language)
+                    segment_language_probs.append(1.0)
             
-            # Create segment with or without token probabilities
-            if isinstance(result, dict):
-                segments.append({
-                    "text": result["text"],
-                    "start": round(segment['start'], 3),
-                    "end": round(segment['end'], 3),
-                    "probabilities": result["probabilities"],
-                    "language": segment_language,
-                    "language_probability": language_probability
-                })
-            else:
+            # Transcribe the batch with individual languages
+            results = self.transcribe_segment_batched(audio_segments, segment_languages)
+            
+            # Process results
+            for idx, result in enumerate(results):
+                segment = batch_segments[idx]
+                if verbose:
+                    print(f"Transcript: [{round(segment['start'], 3)} --> {round(segment['end'], 3)}] {result}")
+                
                 segments.append({
                     "text": result,
                     "start": round(segment['start'], 3),
                     "end": round(segment['end'], 3),
-                    "language": segment_language,
-                    "language_probability": language_probability
+                    "language": segment_languages[idx],
+                    "language_probability": segment_language_probs[idx]
                 })
             
         # Get the most common language across all segments as the overall language
@@ -364,7 +393,6 @@ def load_model(
     local_files_only=False,
     vad_onnx=True,
     silero_merge_cutoff=0.1,
-    return_token_probabilities=False
 ) -> OpenAIWhisperPipeline:
     """Load an OpenAI Whisper model from Hugging Face for inference.
     Args:
@@ -379,7 +407,6 @@ def load_model(
         local_files_only - If `True`, avoid downloading the file and return the path to the local cached file if it exists.
         vad_onnx - If `True`, use the ONNX version of the Silero VAD model.
         silero_merge_cutoff - The merge cutoff for the Silero VAD model.
-        return_token_probabilities - Whether to return token probabilities in the output.
     Returns:
         A Whisper pipeline.
     """
@@ -415,7 +442,6 @@ def load_model(
         "length_penalty": 1.0,
         "suppress_tokens": [-1],
         "without_timestamps": True,
-        "return_token_probabilities": return_token_probabilities,
         "max_new_tokens": None,
         "suppress_numerals": False,
     }

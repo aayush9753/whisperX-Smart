@@ -1,0 +1,3362 @@
+{
+    "segments": [
+        {
+            "start": 0.8,
+            "end": 1.12,
+            "text": "no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " no",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 1.632,
+            "end": 2.016,
+            "text": "- Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello? - Hello?",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " Hello",
+                    "probability": 0.0
+                },
+                {
+                    "token": "?",
+                    "probability": 0.0
+                },
+                {
+                    "token": " -",
+                    "probability": 0.0
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.001
+                }
+            ]
+        },
+        {
+            "start": 3.648,
+            "end": 4.32,
+            "text": "I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who it is. I don't know who",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " don",
+                    "probability": 0.0
+                },
+                {
+                    "token": "'t",
+                    "probability": 0.0
+                },
+                {
+                    "token": " know",
+                    "probability": 0.0
+                },
+                {
+                    "token": " who",
+                    "probability": 0.0
+                },
+                {
+                    "token": " it",
+                    "probability": 0.0
+                },
+                {
+                    "token": " is",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 4.768,
+            "end": 7.424,
+            "text": "Well, good morning, sir. This is Pasha. You're calling from Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. Kultfit. K",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.684
+                },
+                {
+                    "token": " good",
+                    "probability": 0.0
+                },
+                {
+                    "token": " morning",
+                    "probability": 0.0
+                },
+                {
+                    "token": " sir",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " This",
+                    "probability": 0.0
+                },
+                {
+                    "token": " is",
+                    "probability": 0.0
+                },
+                {
+                    "token": " P",
+                    "probability": 0.0
+                },
+                {
+                    "token": "asha",
+                    "probability": 0.0
+                },
+                {
+                    "token": " You",
+                    "probability": 0.0
+                },
+                {
+                    "token": "'re",
+                    "probability": 0.0
+                },
+                {
+                    "token": " calling",
+                    "probability": 0.0
+                },
+                {
+                    "token": " from",
+                    "probability": 0.0
+                },
+                {
+                    "token": " K",
+                    "probability": 0.0
+                },
+                {
+                    "token": "ult",
+                    "probability": 0.0
+                },
+                {
+                    "token": "fit",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 7.84,
+            "end": 8.672,
+            "text": "I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with Rahul, I'm speaking with",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": "'m",
+                    "probability": 0.0
+                },
+                {
+                    "token": " speaking",
+                    "probability": 0.0
+                },
+                {
+                    "token": " with",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Rah",
+                    "probability": 0.0
+                },
+                {
+                    "token": "ul",
+                    "probability": 0.0
+                },
+                {
+                    "token": ",",
+                    "probability": 0.93
+                },
+                {
+                    "token": " I",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 9.12,
+            "end": 9.696,
+            "text": "- Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, Jukka. - Yes, J",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " Yes",
+                    "probability": 0.0
+                },
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " J",
+                    "probability": 0.0
+                },
+                {
+                    "token": "uk",
+                    "probability": 0.0
+                },
+                {
+                    "token": "ka",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.018
+                },
+                {
+                    "token": " -",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 10.4,
+            "end": 11.936,
+            "text": "This is the right time to speak with you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " is",
+                    "probability": 0.001
+                },
+                {
+                    "token": " the",
+                    "probability": 0.0
+                },
+                {
+                    "token": " right",
+                    "probability": 0.0
+                },
+                {
+                    "token": " time",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " speak",
+                    "probability": 0.0
+                },
+                {
+                    "token": " with",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 12.448,
+            "end": 13.344,
+            "text": "Yeah, yeah. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " yeah",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 14.048,
+            "end": 14.144,
+            "text": "Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Thank you for watching. Please subscribe to our channel for more videos. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": " for",
+                    "probability": 0.0
+                },
+                {
+                    "token": " watching",
+                    "probability": 0.001
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Please",
+                    "probability": 0.0
+                },
+                {
+                    "token": " subscribe",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " our",
+                    "probability": 0.0
+                },
+                {
+                    "token": " channel",
+                    "probability": 0.0
+                },
+                {
+                    "token": " more",
+                    "probability": 0.0
+                },
+                {
+                    "token": " videos",
+                    "probability": 0.003
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 14.336,
+            "end": 14.464,
+            "text": "I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do it again. I'm going to do",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": "'m",
+                    "probability": 0.0
+                },
+                {
+                    "token": " going",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.001
+                },
+                {
+                    "token": " do",
+                    "probability": 0.0
+                },
+                {
+                    "token": " it",
+                    "probability": 0.0
+                },
+                {
+                    "token": " again",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.001
+                }
+            ]
+        },
+        {
+            "start": 14.624,
+            "end": 15.392,
+            "text": "Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " you",
+                    "probability": 0.998
+                },
+                {
+                    "token": ".",
+                    "probability": 0.013
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.604
+                }
+            ]
+        },
+        {
+            "start": 15.52,
+            "end": 18.624,
+            "text": "You have a request for a callback for Cult Play. This is a callback for Cult Play. You have a request for a callback for Cult Play. This is a callback for Cult Play. You have a request for a callback for Cult Play. This is a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult Play. You have a request for a callback for Cult",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " a",
+                    "probability": 0.002
+                },
+                {
+                    "token": " request",
+                    "probability": 0.0
+                },
+                {
+                    "token": " for",
+                    "probability": 0.911
+                },
+                {
+                    "token": " call",
+                    "probability": 0.0
+                },
+                {
+                    "token": "back",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Cult",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Play",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " This",
+                    "probability": 0.0
+                },
+                {
+                    "token": " is",
+                    "probability": 0.0
+                },
+                {
+                    "token": " You",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 18.752,
+            "end": 20.096,
+            "text": "is a reason I called you back. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " a",
+                    "probability": 0.003
+                },
+                {
+                    "token": " reason",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.001
+                },
+                {
+                    "token": " called",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": " back",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.013
+                },
+                {
+                    "token": "'m",
+                    "probability": 0.0
+                },
+                {
+                    "token": " sorry",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 20.736,
+            "end": 20.96,
+            "text": "Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh. Oh.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Oh",
+                    "probability": 0.0
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 21.088,
+            "end": 24.8,
+            "text": "- Okay, yeah, yesterday I was thinking to join Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue, Clue",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " Okay",
+                    "probability": 0.003
+                },
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " yeah",
+                    "probability": 0.0
+                },
+                {
+                    "token": " yesterday",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.003
+                },
+                {
+                    "token": " was",
+                    "probability": 0.0
+                },
+                {
+                    "token": " thinking",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " join",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Cl",
+                    "probability": 0.0
+                },
+                {
+                    "token": "ue",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 24.928,
+            "end": 26.88,
+            "text": "I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult in light. I have taken the cult",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " taken",
+                    "probability": 0.0
+                },
+                {
+                    "token": " the",
+                    "probability": 0.0
+                },
+                {
+                    "token": " cult",
+                    "probability": 0.0
+                },
+                {
+                    "token": " in",
+                    "probability": 0.0
+                },
+                {
+                    "token": " light",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.001
+                }
+            ]
+        },
+        {
+            "start": 27.872,
+            "end": 31.36,
+            "text": "So, I was thinking like what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh, what is this cult play? Like, uh",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.674
+                },
+                {
+                    "token": " was",
+                    "probability": 0.0
+                },
+                {
+                    "token": " thinking",
+                    "probability": 0.001
+                },
+                {
+                    "token": " like",
+                    "probability": 0.001
+                },
+                {
+                    "token": " what",
+                    "probability": 0.0
+                },
+                {
+                    "token": " is",
+                    "probability": 0.0
+                },
+                {
+                    "token": " this",
+                    "probability": 0.0
+                },
+                {
+                    "token": " cult",
+                    "probability": 0.001
+                },
+                {
+                    "token": " play",
+                    "probability": 0.002
+                },
+                {
+                    "token": "?",
+                    "probability": 0.001
+                },
+                {
+                    "token": " Like",
+                    "probability": 0.0
+                },
+                {
+                    "token": " uh",
+                    "probability": 0.001
+                }
+            ]
+        },
+        {
+            "start": 31.584,
+            "end": 34.368,
+            "text": "There is also a gene included in this or like not? I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't know. I don't",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " is",
+                    "probability": 0.0
+                },
+                {
+                    "token": " also",
+                    "probability": 0.0
+                },
+                {
+                    "token": " a",
+                    "probability": 0.0
+                },
+                {
+                    "token": " gene",
+                    "probability": 0.0
+                },
+                {
+                    "token": " included",
+                    "probability": 0.0
+                },
+                {
+                    "token": " in",
+                    "probability": 0.0
+                },
+                {
+                    "token": " this",
+                    "probability": 0.0
+                },
+                {
+                    "token": " or",
+                    "probability": 0.0
+                },
+                {
+                    "token": " like",
+                    "probability": 0.0
+                },
+                {
+                    "token": " not",
+                    "probability": 0.0
+                },
+                {
+                    "token": "?",
+                    "probability": 0.012
+                },
+                {
+                    "token": " I",
+                    "probability": 0.0
+                },
+                {
+                    "token": " don",
+                    "probability": 0.0
+                },
+                {
+                    "token": "'t",
+                    "probability": 0.0
+                },
+                {
+                    "token": " know",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.001
+                }
+            ]
+        },
+        {
+            "start": 35.552,
+            "end": 40.992,
+            "text": "Yes, you can go attend two sessions every month for gym, but you can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You can't go to the gym every day. You",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.13
+                },
+                {
+                    "token": " you",
+                    "probability": 0.001
+                },
+                {
+                    "token": " can",
+                    "probability": 0.0
+                },
+                {
+                    "token": " go",
+                    "probability": 0.0
+                },
+                {
+                    "token": " attend",
+                    "probability": 0.0
+                },
+                {
+                    "token": " two",
+                    "probability": 0.0
+                },
+                {
+                    "token": " sessions",
+                    "probability": 0.0
+                },
+                {
+                    "token": " every",
+                    "probability": 0.0
+                },
+                {
+                    "token": " month",
+                    "probability": 0.0
+                },
+                {
+                    "token": " for",
+                    "probability": 0.0
+                },
+                {
+                    "token": " gym",
+                    "probability": 0.0
+                },
+                {
+                    "token": " but",
+                    "probability": 0.0
+                },
+                {
+                    "token": "'t",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " the",
+                    "probability": 0.002
+                },
+                {
+                    "token": " day",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " You",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 41.408,
+            "end": 42.72,
+            "text": "- Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But not all of them. - Oh. - But",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " Oh",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.001
+                },
+                {
+                    "token": " -",
+                    "probability": 0.0
+                },
+                {
+                    "token": " But",
+                    "probability": 0.0
+                },
+                {
+                    "token": " not",
+                    "probability": 0.0
+                },
+                {
+                    "token": " all",
+                    "probability": 0.0
+                },
+                {
+                    "token": " of",
+                    "probability": 0.0
+                },
+                {
+                    "token": " them",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 42.944,
+            "end": 46.784,
+            "text": "I want to appreciate and thank you that you are already a member of Cult Elite. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " want",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " appreciate",
+                    "probability": 0.0
+                },
+                {
+                    "token": " and",
+                    "probability": 0.0
+                },
+                {
+                    "token": " thank",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": " that",
+                    "probability": 0.0
+                },
+                {
+                    "token": " are",
+                    "probability": 0.0
+                },
+                {
+                    "token": " already",
+                    "probability": 0.0
+                },
+                {
+                    "token": " a",
+                    "probability": 0.0
+                },
+                {
+                    "token": " member",
+                    "probability": 0.0
+                },
+                {
+                    "token": " of",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Cult",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Elite",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.001
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.001
+                }
+            ]
+        },
+        {
+            "start": 47.552,
+            "end": 48.0,
+            "text": "Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": " very",
+                    "probability": 0.0
+                },
+                {
+                    "token": " much",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 49.792,
+            "end": 50.272,
+            "text": "Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 50.688,
+            "end": 52.544,
+            "text": "Okay, yeah, that's about all here. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " yeah",
+                    "probability": 0.0
+                },
+                {
+                    "token": " that",
+                    "probability": 0.0
+                },
+                {
+                    "token": "'s",
+                    "probability": 0.0
+                },
+                {
+                    "token": " about",
+                    "probability": 0.009
+                },
+                {
+                    "token": " all",
+                    "probability": 0.0
+                },
+                {
+                    "token": " here",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.001
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.001
+                }
+            ]
+        },
+        {
+            "start": 54.176,
+            "end": 55.828,
+            "text": "And where do you switch it exactly?",
+            "words": [
+                {
+                    "word": "And",
+                    "start": 54.176,
+                    "end": 54.543,
+                    "score": 0.771
+                },
+                {
+                    "word": "where",
+                    "start": 54.625,
+                    "end": 54.768,
+                    "score": 0.276
+                },
+                {
+                    "word": "do",
+                    "start": 54.788,
+                    "end": 54.829,
+                    "score": 0.044
+                },
+                {
+                    "word": "you",
+                    "start": 54.849,
+                    "end": 54.91,
+                    "score": 0.059
+                },
+                {
+                    "word": "switch",
+                    "start": 54.931,
+                    "end": 55.196,
+                    "score": 0.293
+                },
+                {
+                    "word": "it",
+                    "start": 55.216,
+                    "end": 55.298,
+                    "score": 0.416
+                },
+                {
+                    "word": "exactly?",
+                    "start": 55.42,
+                    "end": 55.828,
+                    "score": 0.375
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": " where",
+                    "probability": 0.034
+                },
+                {
+                    "token": " do",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.001
+                },
+                {
+                    "token": " switch",
+                    "probability": 0.0
+                },
+                {
+                    "token": " it",
+                    "probability": 0.0
+                },
+                {
+                    "token": " exactly",
+                    "probability": 0.023
+                },
+                {
+                    "token": "?",
+                    "probability": 0.012
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 56.672,
+            "end": 60.308,
+            "text": "Currently, I was in Bangalore, but I have moved to Hyderabad.",
+            "words": [
+                {
+                    "word": "Currently,",
+                    "start": 56.672,
+                    "end": 57.601,
+                    "score": 0.616
+                },
+                {
+                    "word": "I",
+                    "start": 57.621,
+                    "end": 57.662,
+                    "score": 0.489
+                },
+                {
+                    "word": "was",
+                    "start": 57.682,
+                    "end": 57.743,
+                    "score": 0.008
+                },
+                {
+                    "word": "in",
+                    "start": 57.763,
+                    "end": 57.844,
+                    "score": 0.748
+                },
+                {
+                    "word": "Bangalore,",
+                    "start": 57.884,
+                    "end": 58.389,
+                    "score": 0.406
+                },
+                {
+                    "word": "but",
+                    "start": 58.409,
+                    "end": 58.571,
+                    "score": 0.738
+                },
+                {
+                    "word": "I",
+                    "start": 58.652,
+                    "end": 58.712,
+                    "score": 0.957
+                },
+                {
+                    "word": "have",
+                    "start": 58.753,
+                    "end": 58.914,
+                    "score": 0.646
+                },
+                {
+                    "word": "moved",
+                    "start": 58.975,
+                    "end": 59.238,
+                    "score": 0.856
+                },
+                {
+                    "word": "to",
+                    "start": 59.339,
+                    "end": 59.541,
+                    "score": 0.893
+                },
+                {
+                    "word": "Hyderabad.",
+                    "start": 59.601,
+                    "end": 60.308,
+                    "score": 0.425
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.001
+                },
+                {
+                    "token": " I",
+                    "probability": 0.015
+                },
+                {
+                    "token": " was",
+                    "probability": 0.0
+                },
+                {
+                    "token": " in",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Bang",
+                    "probability": 0.0
+                },
+                {
+                    "token": "al",
+                    "probability": 0.0
+                },
+                {
+                    "token": "ore",
+                    "probability": 0.0
+                },
+                {
+                    "token": " but",
+                    "probability": 0.0
+                },
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " moved",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Hy",
+                    "probability": 0.0
+                },
+                {
+                    "token": "der",
+                    "probability": 0.0
+                },
+                {
+                    "token": "abad",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 60.672,
+            "end": 62.611,
+            "text": "So yesterday I bought in Bangalore one day.",
+            "words": [
+                {
+                    "word": "So",
+                    "start": 60.672,
+                    "end": 60.914,
+                    "score": 0.452
+                },
+                {
+                    "word": "yesterday",
+                    "start": 60.935,
+                    "end": 61.318,
+                    "score": 0.466
+                },
+                {
+                    "word": "I",
+                    "start": 61.339,
+                    "end": 61.359,
+                    "score": 0.029
+                },
+                {
+                    "word": "bought",
+                    "start": 61.379,
+                    "end": 61.642,
+                    "score": 0.396
+                },
+                {
+                    "word": "in",
+                    "start": 61.662,
+                    "end": 61.743,
+                    "score": 0.857
+                },
+                {
+                    "word": "Bangalore",
+                    "start": 61.783,
+                    "end": 62.167,
+                    "score": 0.455
+                },
+                {
+                    "word": "one",
+                    "start": 62.268,
+                    "end": 62.389,
+                    "score": 0.403
+                },
+                {
+                    "word": "day.",
+                    "start": 62.409,
+                    "end": 62.611,
+                    "score": 0.914
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": " yesterday",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.002
+                },
+                {
+                    "token": " bought",
+                    "probability": 0.0
+                },
+                {
+                    "token": " in",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Bang",
+                    "probability": 0.0
+                },
+                {
+                    "token": "al",
+                    "probability": 0.0
+                },
+                {
+                    "token": "ore",
+                    "probability": 0.0
+                },
+                {
+                    "token": " one",
+                    "probability": 0.0
+                },
+                {
+                    "token": " day",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.987
+                },
+                {
+                    "token": " will",
+                    "probability": 0.0
+                },
+                {
+                    "token": " be",
+                    "probability": 0.0
+                },
+                {
+                    "token": " moving",
+                    "probability": 0.0
+                },
+                {
+                    "token": " three",
+                    "probability": 0.0
+                },
+                {
+                    "token": " days",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Hy",
+                    "probability": 0.0
+                },
+                {
+                    "token": "der",
+                    "probability": 0.0
+                },
+                {
+                    "token": "abad",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 62.874,
+            "end": 65.076,
+            "text": "I will be moving in three days to Hyderabad.",
+            "words": [
+                {
+                    "word": "I",
+                    "start": 62.874,
+                    "end": 62.995,
+                    "score": 0.617
+                },
+                {
+                    "word": "will",
+                    "start": 63.096,
+                    "end": 63.177,
+                    "score": 0.064
+                },
+                {
+                    "word": "be",
+                    "start": 63.197,
+                    "end": 63.238,
+                    "score": 0.354
+                },
+                {
+                    "word": "moving",
+                    "start": 63.258,
+                    "end": 63.581,
+                    "score": 0.824
+                },
+                {
+                    "word": "in",
+                    "start": 63.622,
+                    "end": 63.702,
+                    "score": 0.847
+                },
+                {
+                    "word": "three",
+                    "start": 63.743,
+                    "end": 63.945,
+                    "score": 0.534
+                },
+                {
+                    "word": "days",
+                    "start": 63.965,
+                    "end": 64.147,
+                    "score": 0.772
+                },
+                {
+                    "word": "to",
+                    "start": 64.187,
+                    "end": 64.288,
+                    "score": 0.846
+                },
+                {
+                    "word": "Hyderabad.",
+                    "start": 64.612,
+                    "end": 65.076,
+                    "score": 0.448
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": " yesterday",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.002
+                },
+                {
+                    "token": " bought",
+                    "probability": 0.0
+                },
+                {
+                    "token": " in",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Bang",
+                    "probability": 0.0
+                },
+                {
+                    "token": "al",
+                    "probability": 0.0
+                },
+                {
+                    "token": "ore",
+                    "probability": 0.0
+                },
+                {
+                    "token": " one",
+                    "probability": 0.0
+                },
+                {
+                    "token": " day",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.987
+                },
+                {
+                    "token": " will",
+                    "probability": 0.0
+                },
+                {
+                    "token": " be",
+                    "probability": 0.0
+                },
+                {
+                    "token": " moving",
+                    "probability": 0.0
+                },
+                {
+                    "token": " three",
+                    "probability": 0.0
+                },
+                {
+                    "token": " days",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Hy",
+                    "probability": 0.0
+                },
+                {
+                    "token": "der",
+                    "probability": 0.0
+                },
+                {
+                    "token": "abad",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 66.208,
+            "end": 66.854,
+            "text": "Okay, Hyderabad.",
+            "words": [
+                {
+                    "word": "Okay,",
+                    "start": 66.208,
+                    "end": 66.511,
+                    "score": 0.221
+                },
+                {
+                    "word": "Hyderabad.",
+                    "start": 66.531,
+                    "end": 66.854,
+                    "score": 0.271
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.104
+                },
+                {
+                    "token": " Hy",
+                    "probability": 0.0
+                },
+                {
+                    "token": "der",
+                    "probability": 0.0
+                },
+                {
+                    "token": "abad",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Yeah",
+                    "probability": 0.0
+                },
+                {
+                    "token": " in",
+                    "probability": 0.0
+                },
+                {
+                    "token": " we",
+                    "probability": 0.0
+                },
+                {
+                    "token": " do",
+                    "probability": 0.0
+                },
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " that",
+                    "probability": 0.0
+                },
+                {
+                    "token": " play",
+                    "probability": 0.0
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 66.875,
+            "end": 69.076,
+            "text": "Yeah, in Hyderabad we do have that play.",
+            "words": [
+                {
+                    "word": "Yeah,",
+                    "start": 66.875,
+                    "end": 66.976,
+                    "score": 0.297
+                },
+                {
+                    "word": "in",
+                    "start": 67.036,
+                    "end": 67.117,
+                    "score": 0.889
+                },
+                {
+                    "word": "Hyderabad",
+                    "start": 67.258,
+                    "end": 67.642,
+                    "score": 0.401
+                },
+                {
+                    "word": "we",
+                    "start": 67.682,
+                    "end": 67.824,
+                    "score": 0.85
+                },
+                {
+                    "word": "do",
+                    "start": 67.844,
+                    "end": 67.965,
+                    "score": 0.834
+                },
+                {
+                    "word": "have",
+                    "start": 68.006,
+                    "end": 68.228,
+                    "score": 0.728
+                },
+                {
+                    "word": "that",
+                    "start": 68.248,
+                    "end": 68.733,
+                    "score": 0.722
+                },
+                {
+                    "word": "play.",
+                    "start": 68.753,
+                    "end": 69.076,
+                    "score": 0.61
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.104
+                },
+                {
+                    "token": " Hy",
+                    "probability": 0.0
+                },
+                {
+                    "token": "der",
+                    "probability": 0.0
+                },
+                {
+                    "token": "abad",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Yeah",
+                    "probability": 0.0
+                },
+                {
+                    "token": " in",
+                    "probability": 0.0
+                },
+                {
+                    "token": " we",
+                    "probability": 0.0
+                },
+                {
+                    "token": " do",
+                    "probability": 0.0
+                },
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " that",
+                    "probability": 0.0
+                },
+                {
+                    "token": " play",
+                    "probability": 0.0
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 69.536,
+            "end": 74.1,
+            "text": "where you can purchase for the Bangalore membership and transfer it for Hyderabad.",
+            "words": [
+                {
+                    "word": "where",
+                    "start": 69.536,
+                    "end": 69.698,
+                    "score": 0.227
+                },
+                {
+                    "word": "you",
+                    "start": 69.738,
+                    "end": 69.799,
+                    "score": 0.335
+                },
+                {
+                    "word": "can",
+                    "start": 69.839,
+                    "end": 69.98,
+                    "score": 0.98
+                },
+                {
+                    "word": "purchase",
+                    "start": 70.041,
+                    "end": 70.404,
+                    "score": 0.438
+                },
+                {
+                    "word": "for",
+                    "start": 70.445,
+                    "end": 70.586,
+                    "score": 0.981
+                },
+                {
+                    "word": "the",
+                    "start": 70.627,
+                    "end": 70.687,
+                    "score": 0.943
+                },
+                {
+                    "word": "Bangalore",
+                    "start": 70.748,
+                    "end": 71.374,
+                    "score": 0.453
+                },
+                {
+                    "word": "membership",
+                    "start": 71.414,
+                    "end": 71.939,
+                    "score": 0.426
+                },
+                {
+                    "word": "and",
+                    "start": 71.959,
+                    "end": 72.081,
+                    "score": 0.843
+                },
+                {
+                    "word": "transfer",
+                    "start": 72.464,
+                    "end": 72.848,
+                    "score": 0.572
+                },
+                {
+                    "word": "it",
+                    "start": 72.868,
+                    "end": 72.909,
+                    "score": 0.48
+                },
+                {
+                    "word": "for",
+                    "start": 72.949,
+                    "end": 73.09,
+                    "score": 0.739
+                },
+                {
+                    "word": "Hyderabad.",
+                    "start": 73.131,
+                    "end": 74.1,
+                    "score": 0.527
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": " you",
+                    "probability": 0.002
+                },
+                {
+                    "token": " can",
+                    "probability": 0.0
+                },
+                {
+                    "token": " purchase",
+                    "probability": 0.0
+                },
+                {
+                    "token": " for",
+                    "probability": 0.0
+                },
+                {
+                    "token": " the",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Bang",
+                    "probability": 0.0
+                },
+                {
+                    "token": "al",
+                    "probability": 0.0
+                },
+                {
+                    "token": "ore",
+                    "probability": 0.0
+                },
+                {
+                    "token": " membership",
+                    "probability": 0.0
+                },
+                {
+                    "token": " and",
+                    "probability": 0.0
+                },
+                {
+                    "token": " transfer",
+                    "probability": 0.0
+                },
+                {
+                    "token": " it",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Hy",
+                    "probability": 0.0
+                },
+                {
+                    "token": "der",
+                    "probability": 0.0
+                },
+                {
+                    "token": "abad",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 74.336,
+            "end": 75.924,
+            "text": "prices compared to Hyderabad.",
+            "words": [
+                {
+                    "word": "prices",
+                    "start": 74.336,
+                    "end": 74.723,
+                    "score": 0.663
+                },
+                {
+                    "word": "compared",
+                    "start": 74.784,
+                    "end": 75.13,
+                    "score": 0.721
+                },
+                {
+                    "word": "to",
+                    "start": 75.171,
+                    "end": 75.252,
+                    "score": 0.885
+                },
+                {
+                    "word": "Hyderabad.",
+                    "start": 75.293,
+                    "end": 75.924,
+                    "score": 0.668
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": " compared",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Hy",
+                    "probability": 0.0
+                },
+                {
+                    "token": "der",
+                    "probability": 0.0
+                },
+                {
+                    "token": "abad",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 76.224,
+            "end": 77.461,
+            "text": "but Bangalore is very lesser.",
+            "words": [
+                {
+                    "word": "but",
+                    "start": 76.224,
+                    "end": 76.348,
+                    "score": 0.249
+                },
+                {
+                    "word": "Bangalore",
+                    "start": 76.368,
+                    "end": 76.739,
+                    "score": 0.567
+                },
+                {
+                    "word": "is",
+                    "start": 76.801,
+                    "end": 76.863,
+                    "score": 0.817
+                },
+                {
+                    "word": "very",
+                    "start": 76.904,
+                    "end": 77.069,
+                    "score": 0.954
+                },
+                {
+                    "word": "lesser.",
+                    "start": 77.131,
+                    "end": 77.461,
+                    "score": 0.63
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": " Bang",
+                    "probability": 0.0
+                },
+                {
+                    "token": "al",
+                    "probability": 0.0
+                },
+                {
+                    "token": "ore",
+                    "probability": 0.0
+                },
+                {
+                    "token": " is",
+                    "probability": 0.0
+                },
+                {
+                    "token": " very",
+                    "probability": 0.0
+                },
+                {
+                    "token": " lesser",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 78.816,
+            "end": 79.402,
+            "text": "Okay.",
+            "words": [
+                {
+                    "word": "Okay.",
+                    "start": 78.816,
+                    "end": 79.402,
+                    "score": 0.483
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": ".",
+                    "probability": 0.023
+                },
+                {
+                    "token": " But",
+                    "probability": 0.0
+                },
+                {
+                    "token": " yeah",
+                    "probability": 0.0
+                },
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.028
+                },
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " already",
+                    "probability": 0.0
+                },
+                {
+                    "token": " taken",
+                    "probability": 0.0
+                },
+                {
+                    "token": " red",
+                    "probability": 0.0
+                },
+                {
+                    "token": " light",
+                    "probability": 0.0
+                },
+                {
+                    "token": " will",
+                    "probability": 0.0
+                },
+                {
+                    "token": " first",
+                    "probability": 0.0
+                },
+                {
+                    "token": "...",
+                    "probability": 0.027
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 79.422,
+            "end": 81.321,
+            "text": "But yeah, I have already taken red light.",
+            "words": [
+                {
+                    "word": "But",
+                    "start": 79.422,
+                    "end": 79.523,
+                    "score": 0.883
+                },
+                {
+                    "word": "yeah,",
+                    "start": 79.563,
+                    "end": 79.765,
+                    "score": 0.665
+                },
+                {
+                    "word": "I",
+                    "start": 79.887,
+                    "end": 79.967,
+                    "score": 0.565
+                },
+                {
+                    "word": "have",
+                    "start": 79.988,
+                    "end": 80.068,
+                    "score": 0.2
+                },
+                {
+                    "word": "already",
+                    "start": 80.089,
+                    "end": 80.472,
+                    "score": 0.702
+                },
+                {
+                    "word": "taken",
+                    "start": 80.493,
+                    "end": 80.775,
+                    "score": 0.516
+                },
+                {
+                    "word": "red",
+                    "start": 80.856,
+                    "end": 81.018,
+                    "score": 0.503
+                },
+                {
+                    "word": "light.",
+                    "start": 81.038,
+                    "end": 81.321,
+                    "score": 0.459
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": ".",
+                    "probability": 0.023
+                },
+                {
+                    "token": " But",
+                    "probability": 0.0
+                },
+                {
+                    "token": " yeah",
+                    "probability": 0.0
+                },
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.028
+                },
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " already",
+                    "probability": 0.0
+                },
+                {
+                    "token": " taken",
+                    "probability": 0.0
+                },
+                {
+                    "token": " red",
+                    "probability": 0.0
+                },
+                {
+                    "token": " light",
+                    "probability": 0.0
+                },
+                {
+                    "token": " will",
+                    "probability": 0.0
+                },
+                {
+                    "token": " first",
+                    "probability": 0.0
+                },
+                {
+                    "token": "...",
+                    "probability": 0.027
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 81.341,
+            "end": 82.068,
+            "text": "I will first...",
+            "words": [
+                {
+                    "word": "I",
+                    "start": 81.341,
+                    "end": 81.563,
+                    "score": 0.646
+                },
+                {
+                    "word": "will",
+                    "start": 81.583,
+                    "end": 81.705,
+                    "score": 0.427
+                },
+                {
+                    "word": "first...",
+                    "start": 81.806,
+                    "end": 82.068,
+                    "score": 0.51
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": ".",
+                    "probability": 0.023
+                },
+                {
+                    "token": " But",
+                    "probability": 0.0
+                },
+                {
+                    "token": " yeah",
+                    "probability": 0.0
+                },
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.028
+                },
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " already",
+                    "probability": 0.0
+                },
+                {
+                    "token": " taken",
+                    "probability": 0.0
+                },
+                {
+                    "token": " red",
+                    "probability": 0.0
+                },
+                {
+                    "token": " light",
+                    "probability": 0.0
+                },
+                {
+                    "token": " will",
+                    "probability": 0.0
+                },
+                {
+                    "token": " first",
+                    "probability": 0.0
+                },
+                {
+                    "token": "...",
+                    "probability": 0.027
+                },
+                {
+                    "token": "<|endoftext|>",
+                    "probability": 0.002
+                }
+            ]
+        },
+        {
+            "start": 82.56,
+            "end": 88.16,
+            "text": "go with the light, we'll see how it is. And then if later I will need, then I will take the place. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " with",
+                    "probability": 0.007
+                },
+                {
+                    "token": " the",
+                    "probability": 0.0
+                },
+                {
+                    "token": " light",
+                    "probability": 0.001
+                },
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " we",
+                    "probability": 0.331
+                },
+                {
+                    "token": "'ll",
+                    "probability": 0.0
+                },
+                {
+                    "token": " see",
+                    "probability": 0.0
+                },
+                {
+                    "token": " how",
+                    "probability": 0.0
+                },
+                {
+                    "token": " it",
+                    "probability": 0.0
+                },
+                {
+                    "token": " is",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " And",
+                    "probability": 0.002
+                },
+                {
+                    "token": " then",
+                    "probability": 0.1
+                },
+                {
+                    "token": " if",
+                    "probability": 0.048
+                },
+                {
+                    "token": " later",
+                    "probability": 0.224
+                },
+                {
+                    "token": " I",
+                    "probability": 0.001
+                },
+                {
+                    "token": " will",
+                    "probability": 0.0
+                },
+                {
+                    "token": " need",
+                    "probability": 0.003
+                },
+                {
+                    "token": " take",
+                    "probability": 0.0
+                },
+                {
+                    "token": " place",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": " very",
+                    "probability": 0.0
+                },
+                {
+                    "token": " much",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 89.664,
+            "end": 96.384,
+            "text": "Okay, because the price is coming. Fine, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members who are interested? I can give a discount today if you want to give a discount. Okay, sir. Do you have anyone, sir, from your friends or family members",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " because",
+                    "probability": 0.0
+                },
+                {
+                    "token": " the",
+                    "probability": 0.943
+                },
+                {
+                    "token": " price",
+                    "probability": 0.0
+                },
+                {
+                    "token": " is",
+                    "probability": 0.0
+                },
+                {
+                    "token": " coming",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Fine",
+                    "probability": 0.0
+                },
+                {
+                    "token": " sir",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Do",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " anyone",
+                    "probability": 0.0
+                },
+                {
+                    "token": " from",
+                    "probability": 0.0
+                },
+                {
+                    "token": " your",
+                    "probability": 0.0
+                },
+                {
+                    "token": " friends",
+                    "probability": 0.0
+                },
+                {
+                    "token": " or",
+                    "probability": 0.0
+                },
+                {
+                    "token": " family",
+                    "probability": 0.0
+                },
+                {
+                    "token": " members",
+                    "probability": 0.0
+                },
+                {
+                    "token": " who",
+                    "probability": 0.0
+                },
+                {
+                    "token": " are",
+                    "probability": 0.0
+                },
+                {
+                    "token": " interested",
+                    "probability": 0.0
+                },
+                {
+                    "token": "?",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.0
+                },
+                {
+                    "token": " can",
+                    "probability": 0.0
+                },
+                {
+                    "token": " give",
+                    "probability": 0.0
+                },
+                {
+                    "token": " a",
+                    "probability": 0.002
+                },
+                {
+                    "token": " discount",
+                    "probability": 0.0
+                },
+                {
+                    "token": " today",
+                    "probability": 0.0
+                },
+                {
+                    "token": " if",
+                    "probability": 0.0
+                },
+                {
+                    "token": " want",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Okay",
+                    "probability": 0.001
+                }
+            ]
+        },
+        {
+            "start": 96.544,
+            "end": 97.632,
+            "text": "because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock, but also because of the fish stock",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " of",
+                    "probability": 0.0
+                },
+                {
+                    "token": " the",
+                    "probability": 0.0
+                },
+                {
+                    "token": " fish",
+                    "probability": 0.0
+                },
+                {
+                    "token": " stock",
+                    "probability": 0.0
+                },
+                {
+                    "token": ",",
+                    "probability": 0.007
+                },
+                {
+                    "token": " but",
+                    "probability": 0.0
+                },
+                {
+                    "token": " also",
+                    "probability": 0.0
+                },
+                {
+                    "token": " because",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 97.856,
+            "end": 99.392,
+            "text": "the price has completely come down. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " price",
+                    "probability": 0.0
+                },
+                {
+                    "token": " has",
+                    "probability": 0.0
+                },
+                {
+                    "token": " completely",
+                    "probability": 0.0
+                },
+                {
+                    "token": " come",
+                    "probability": 0.0
+                },
+                {
+                    "token": " down",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 100.032,
+            "end": 100.928,
+            "text": "we had. Um, yeah, I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good point. I think that's a good",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " had",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Um",
+                    "probability": 0.0
+                },
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " yeah",
+                    "probability": 0.0
+                },
+                {
+                    "token": " I",
+                    "probability": 0.0
+                },
+                {
+                    "token": " think",
+                    "probability": 0.0
+                },
+                {
+                    "token": " that",
+                    "probability": 0.0
+                },
+                {
+                    "token": "'s",
+                    "probability": 0.0
+                },
+                {
+                    "token": " a",
+                    "probability": 0.0
+                },
+                {
+                    "token": " good",
+                    "probability": 0.001
+                },
+                {
+                    "token": " point",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 101.28,
+            "end": 102.24,
+            "text": "No, no, sir. No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " no",
+                    "probability": 0.0
+                },
+                {
+                    "token": " sir",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.197
+                },
+                {
+                    "token": " No",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 103.84,
+            "end": 106.016,
+            "text": "In this case, if you have anyone, you can just call back to the same number. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " this",
+                    "probability": 0.0
+                },
+                {
+                    "token": " case",
+                    "probability": 0.0
+                },
+                {
+                    "token": ",",
+                    "probability": 0.0
+                },
+                {
+                    "token": " if",
+                    "probability": 0.0
+                },
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": " have",
+                    "probability": 0.0
+                },
+                {
+                    "token": " anyone",
+                    "probability": 0.0
+                },
+                {
+                    "token": " can",
+                    "probability": 0.0
+                },
+                {
+                    "token": " just",
+                    "probability": 0.0
+                },
+                {
+                    "token": " call",
+                    "probability": 0.0
+                },
+                {
+                    "token": " back",
+                    "probability": 0.0
+                },
+                {
+                    "token": " to",
+                    "probability": 0.0
+                },
+                {
+                    "token": " the",
+                    "probability": 0.001
+                },
+                {
+                    "token": " same",
+                    "probability": 0.0
+                },
+                {
+                    "token": " number",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 107.008,
+            "end": 107.2,
+            "text": "Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much. Thank you very much.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " you",
+                    "probability": 0.0
+                },
+                {
+                    "token": " very",
+                    "probability": 0.0
+                },
+                {
+                    "token": " much",
+                    "probability": 0.0
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                },
+                {
+                    "token": " Thank",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 107.328,
+            "end": 107.424,
+            "text": "Thank you.",
+            "words": [],
+            "chars": null,
+            "token_probabilities": [
+                {
+                    "token": " you",
+                    "probability": 0.273
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                }
+            ]
+        },
+        {
+            "start": 108.096,
+            "end": 108.534,
+            "text": "Thank you.",
+            "words": [
+                {
+                    "word": "Thank",
+                    "start": 108.096,
+                    "end": 108.424,
+                    "score": 0.303
+                },
+                {
+                    "word": "you.",
+                    "start": 108.446,
+                    "end": 108.534,
+                    "score": 0.246
+                }
+            ],
+            "token_probabilities": [
+                {
+                    "token": " you",
+                    "probability": 0.273
+                },
+                {
+                    "token": ".",
+                    "probability": 0.0
+                }
+            ]
+        }
+    ],
+    "word_segments": [
+        {
+            "word": "And",
+            "start": 54.176,
+            "end": 54.543,
+            "score": 0.771
+        },
+        {
+            "word": "where",
+            "start": 54.625,
+            "end": 54.768,
+            "score": 0.276
+        },
+        {
+            "word": "do",
+            "start": 54.788,
+            "end": 54.829,
+            "score": 0.044
+        },
+        {
+            "word": "you",
+            "start": 54.849,
+            "end": 54.91,
+            "score": 0.059
+        },
+        {
+            "word": "switch",
+            "start": 54.931,
+            "end": 55.196,
+            "score": 0.293
+        },
+        {
+            "word": "it",
+            "start": 55.216,
+            "end": 55.298,
+            "score": 0.416
+        },
+        {
+            "word": "exactly?",
+            "start": 55.42,
+            "end": 55.828,
+            "score": 0.375
+        },
+        {
+            "word": "Currently,",
+            "start": 56.672,
+            "end": 57.601,
+            "score": 0.616
+        },
+        {
+            "word": "I",
+            "start": 57.621,
+            "end": 57.662,
+            "score": 0.489
+        },
+        {
+            "word": "was",
+            "start": 57.682,
+            "end": 57.743,
+            "score": 0.008
+        },
+        {
+            "word": "in",
+            "start": 57.763,
+            "end": 57.844,
+            "score": 0.748
+        },
+        {
+            "word": "Bangalore,",
+            "start": 57.884,
+            "end": 58.389,
+            "score": 0.406
+        },
+        {
+            "word": "but",
+            "start": 58.409,
+            "end": 58.571,
+            "score": 0.738
+        },
+        {
+            "word": "I",
+            "start": 58.652,
+            "end": 58.712,
+            "score": 0.957
+        },
+        {
+            "word": "have",
+            "start": 58.753,
+            "end": 58.914,
+            "score": 0.646
+        },
+        {
+            "word": "moved",
+            "start": 58.975,
+            "end": 59.238,
+            "score": 0.856
+        },
+        {
+            "word": "to",
+            "start": 59.339,
+            "end": 59.541,
+            "score": 0.893
+        },
+        {
+            "word": "Hyderabad.",
+            "start": 59.601,
+            "end": 60.308,
+            "score": 0.425
+        },
+        {
+            "word": "So",
+            "start": 60.672,
+            "end": 60.914,
+            "score": 0.452
+        },
+        {
+            "word": "yesterday",
+            "start": 60.935,
+            "end": 61.318,
+            "score": 0.466
+        },
+        {
+            "word": "I",
+            "start": 61.339,
+            "end": 61.359,
+            "score": 0.029
+        },
+        {
+            "word": "bought",
+            "start": 61.379,
+            "end": 61.642,
+            "score": 0.396
+        },
+        {
+            "word": "in",
+            "start": 61.662,
+            "end": 61.743,
+            "score": 0.857
+        },
+        {
+            "word": "Bangalore",
+            "start": 61.783,
+            "end": 62.167,
+            "score": 0.455
+        },
+        {
+            "word": "one",
+            "start": 62.268,
+            "end": 62.389,
+            "score": 0.403
+        },
+        {
+            "word": "day.",
+            "start": 62.409,
+            "end": 62.611,
+            "score": 0.914
+        },
+        {
+            "word": "I",
+            "start": 62.874,
+            "end": 62.995,
+            "score": 0.617
+        },
+        {
+            "word": "will",
+            "start": 63.096,
+            "end": 63.177,
+            "score": 0.064
+        },
+        {
+            "word": "be",
+            "start": 63.197,
+            "end": 63.238,
+            "score": 0.354
+        },
+        {
+            "word": "moving",
+            "start": 63.258,
+            "end": 63.581,
+            "score": 0.824
+        },
+        {
+            "word": "in",
+            "start": 63.622,
+            "end": 63.702,
+            "score": 0.847
+        },
+        {
+            "word": "three",
+            "start": 63.743,
+            "end": 63.945,
+            "score": 0.534
+        },
+        {
+            "word": "days",
+            "start": 63.965,
+            "end": 64.147,
+            "score": 0.772
+        },
+        {
+            "word": "to",
+            "start": 64.187,
+            "end": 64.288,
+            "score": 0.846
+        },
+        {
+            "word": "Hyderabad.",
+            "start": 64.612,
+            "end": 65.076,
+            "score": 0.448
+        },
+        {
+            "word": "Okay,",
+            "start": 66.208,
+            "end": 66.511,
+            "score": 0.221
+        },
+        {
+            "word": "Hyderabad.",
+            "start": 66.531,
+            "end": 66.854,
+            "score": 0.271
+        },
+        {
+            "word": "Yeah,",
+            "start": 66.875,
+            "end": 66.976,
+            "score": 0.297
+        },
+        {
+            "word": "in",
+            "start": 67.036,
+            "end": 67.117,
+            "score": 0.889
+        },
+        {
+            "word": "Hyderabad",
+            "start": 67.258,
+            "end": 67.642,
+            "score": 0.401
+        },
+        {
+            "word": "we",
+            "start": 67.682,
+            "end": 67.824,
+            "score": 0.85
+        },
+        {
+            "word": "do",
+            "start": 67.844,
+            "end": 67.965,
+            "score": 0.834
+        },
+        {
+            "word": "have",
+            "start": 68.006,
+            "end": 68.228,
+            "score": 0.728
+        },
+        {
+            "word": "that",
+            "start": 68.248,
+            "end": 68.733,
+            "score": 0.722
+        },
+        {
+            "word": "play.",
+            "start": 68.753,
+            "end": 69.076,
+            "score": 0.61
+        },
+        {
+            "word": "where",
+            "start": 69.536,
+            "end": 69.698,
+            "score": 0.227
+        },
+        {
+            "word": "you",
+            "start": 69.738,
+            "end": 69.799,
+            "score": 0.335
+        },
+        {
+            "word": "can",
+            "start": 69.839,
+            "end": 69.98,
+            "score": 0.98
+        },
+        {
+            "word": "purchase",
+            "start": 70.041,
+            "end": 70.404,
+            "score": 0.438
+        },
+        {
+            "word": "for",
+            "start": 70.445,
+            "end": 70.586,
+            "score": 0.981
+        },
+        {
+            "word": "the",
+            "start": 70.627,
+            "end": 70.687,
+            "score": 0.943
+        },
+        {
+            "word": "Bangalore",
+            "start": 70.748,
+            "end": 71.374,
+            "score": 0.453
+        },
+        {
+            "word": "membership",
+            "start": 71.414,
+            "end": 71.939,
+            "score": 0.426
+        },
+        {
+            "word": "and",
+            "start": 71.959,
+            "end": 72.081,
+            "score": 0.843
+        },
+        {
+            "word": "transfer",
+            "start": 72.464,
+            "end": 72.848,
+            "score": 0.572
+        },
+        {
+            "word": "it",
+            "start": 72.868,
+            "end": 72.909,
+            "score": 0.48
+        },
+        {
+            "word": "for",
+            "start": 72.949,
+            "end": 73.09,
+            "score": 0.739
+        },
+        {
+            "word": "Hyderabad.",
+            "start": 73.131,
+            "end": 74.1,
+            "score": 0.527
+        },
+        {
+            "word": "prices",
+            "start": 74.336,
+            "end": 74.723,
+            "score": 0.663
+        },
+        {
+            "word": "compared",
+            "start": 74.784,
+            "end": 75.13,
+            "score": 0.721
+        },
+        {
+            "word": "to",
+            "start": 75.171,
+            "end": 75.252,
+            "score": 0.885
+        },
+        {
+            "word": "Hyderabad.",
+            "start": 75.293,
+            "end": 75.924,
+            "score": 0.668
+        },
+        {
+            "word": "but",
+            "start": 76.224,
+            "end": 76.348,
+            "score": 0.249
+        },
+        {
+            "word": "Bangalore",
+            "start": 76.368,
+            "end": 76.739,
+            "score": 0.567
+        },
+        {
+            "word": "is",
+            "start": 76.801,
+            "end": 76.863,
+            "score": 0.817
+        },
+        {
+            "word": "very",
+            "start": 76.904,
+            "end": 77.069,
+            "score": 0.954
+        },
+        {
+            "word": "lesser.",
+            "start": 77.131,
+            "end": 77.461,
+            "score": 0.63
+        },
+        {
+            "word": "Okay.",
+            "start": 78.816,
+            "end": 79.402,
+            "score": 0.483
+        },
+        {
+            "word": "But",
+            "start": 79.422,
+            "end": 79.523,
+            "score": 0.883
+        },
+        {
+            "word": "yeah,",
+            "start": 79.563,
+            "end": 79.765,
+            "score": 0.665
+        },
+        {
+            "word": "I",
+            "start": 79.887,
+            "end": 79.967,
+            "score": 0.565
+        },
+        {
+            "word": "have",
+            "start": 79.988,
+            "end": 80.068,
+            "score": 0.2
+        },
+        {
+            "word": "already",
+            "start": 80.089,
+            "end": 80.472,
+            "score": 0.702
+        },
+        {
+            "word": "taken",
+            "start": 80.493,
+            "end": 80.775,
+            "score": 0.516
+        },
+        {
+            "word": "red",
+            "start": 80.856,
+            "end": 81.018,
+            "score": 0.503
+        },
+        {
+            "word": "light.",
+            "start": 81.038,
+            "end": 81.321,
+            "score": 0.459
+        },
+        {
+            "word": "I",
+            "start": 81.341,
+            "end": 81.563,
+            "score": 0.646
+        },
+        {
+            "word": "will",
+            "start": 81.583,
+            "end": 81.705,
+            "score": 0.427
+        },
+        {
+            "word": "first...",
+            "start": 81.806,
+            "end": 82.068,
+            "score": 0.51
+        },
+        {
+            "word": "Thank",
+            "start": 108.096,
+            "end": 108.424,
+            "score": 0.303
+        },
+        {
+            "word": "you.",
+            "start": 108.446,
+            "end": 108.534,
+            "score": 0.246
+        }
+    ],
+    "language": "en",
+    "language_probability": 1.0
+}
