@@ -349,6 +349,7 @@ class FasterWhisperPipeline(Pipeline):
             
             # Detect language for each merged segment
             language_segments = {}
+            language_probabilities = {}
             for merged_seg in tqdm(merged_segments, desc="Detecting language for segments"):
                 # Extract audio for merged segment
                 f1 = int(merged_seg['start'] * SAMPLE_RATE)
@@ -356,19 +357,22 @@ class FasterWhisperPipeline(Pipeline):
                 segment_audio = audio[f1:f2]
                 
                 # Detect language for this merged segment
-                segment_language = self.detect_language(segment_audio)
+                segment_language, segment_language_probability = self.detect_language(segment_audio)
                 
                 # Assign language to all original segments in this merged segment
                 for original_seg in merged_seg['original_segments']:
                     if segment_language not in language_segments:
                         language_segments[segment_language] = []
+                        language_probabilities[segment_language] = []
                     
                     language_segments[segment_language].append(original_seg)
+                    language_probabilities[segment_language].append(segment_language_probability)
         else:
             # Use specified language for all segments
             language_segments = {language: vad_segments}
-            
+            language_probabilities = {language: [1.0] * len(vad_segments)}
         audio_language = max(language_segments.keys(), key=lambda k: len(language_segments[k]))
+        audio_language_probability = sum(language_probabilities[audio_language]) / len(language_probabilities[audio_language])
         
         # Set default task if not specified
         task = task or "transcribe"
@@ -450,6 +454,7 @@ class FasterWhisperPipeline(Pipeline):
         result = {
             "segments": all_segments,
             "language": audio_language,
+            "language_probability": audio_language_probability
         }
         
         return result
@@ -464,7 +469,7 @@ class FasterWhisperPipeline(Pipeline):
         results = self.model.model.detect_language(encoder_output)
         language_token, language_probability = results[0][0]
         language = language_token[2:-2]
-        return language
+        return language, round(language_probability, 2)
 
 
 def load_model(
