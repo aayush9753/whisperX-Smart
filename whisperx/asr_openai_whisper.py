@@ -129,7 +129,7 @@ class OpenAIWhisperPipeline:
         # Run encoder on features
         with torch.no_grad():
             # Pass through encoder 
-            encoder_output = self.model.model.encoder(input_features)
+            encoder_output = self.model.model.encoder(input_features.to(self.model.device))
             # Extract hidden states from BaseModelOutput
             encoder_hidden_states = encoder_output.last_hidden_state
             
@@ -299,6 +299,8 @@ class OpenAIWhisperPipeline:
             onset=self._vad_params["vad_onset"],
             offset=self._vad_params["vad_offset"],
         )
+        
+        
         
         # Detect language if not provided
         detected_language = self.detect_language(audio) if not language else (language, 1.0)
