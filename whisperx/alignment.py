@@ -79,8 +79,10 @@ def load_align_model(language_code: str, device: str, model_name: Optional[str] 
     if model_name is None:
         # use default model
         if language_code in DEFAULT_ALIGN_MODELS_TORCH:
+            print("Using Default Alignment Model")
             model_name = DEFAULT_ALIGN_MODELS_TORCH[language_code]
         elif language_code in DEFAULT_ALIGN_MODELS_HF:
+            print("Using Default Alignment Model")
             model_name = DEFAULT_ALIGN_MODELS_HF[language_code]
         else:
             print(f"There is no default alignment model set for this language ({language_code}).\
