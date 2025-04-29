@@ -122,9 +122,8 @@ def align(
     return_char_alignments: bool = False,
     print_progress: bool = False,
     combined_progress: bool = False,
-    return_token_probabilities: bool = False,
-    language: Optional[str] = None,
-    language_probability: Optional[float] = None,
+    audio_language: Optional[str] = None,
+    audio_language_probability: Optional[float] = None,
 ) -> AlignedTranscriptionResult:
     """
     Align phoneme recognition predictions to known transcription.
@@ -139,9 +138,8 @@ def align(
         return_char_alignments: Whether to return character-level alignments
         print_progress: Whether to print progress
         combined_progress: Whether progress is combined with other steps
-        return_token_probabilities: Whether to preserve token probabilities in segments
-        language: Language code
-        language_probability: Probability of language detection
+        audio_language: Language code
+        audio_language_probability: Probability of language detection
     
     Returns:
         Aligned transcription result
@@ -159,16 +157,6 @@ def align(
     model_dictionary = align_model_metadata["dictionary"]
     model_lang = align_model_metadata["language"]
     model_type = align_model_metadata["type"]
-
-    # Store original token probabilities
-    segment_tokens = {}
-    if return_token_probabilities:
-        for idx, segment in enumerate(transcript):
-            if "probabilities" in segment:
-                segment_tokens[idx] = [
-                    {"token": token, "probability": prob} 
-                    for token, prob in segment["probabilities"].items()
-                ]
 
     # 1. Preprocess to keep only characters in dictionary
     total_segments = len(transcript)
@@ -240,7 +228,8 @@ def align(
         t1 = segment["start"]
         t2 = segment["end"]
         text = segment["text"]
-
+        language = segment["language"]
+        probability = segment["probability"]
         aligned_seg: SingleAlignedSegment = {
             "start": t1,
             "end": t2,
@@ -402,51 +391,18 @@ def align(
             agg_dict["chars"] = "sum"
         aligned_subsegments= aligned_subsegments.groupby(["start", "end"], as_index=False).agg(agg_dict)
         aligned_subsegments = aligned_subsegments.to_dict('records')
+        for subsegment in aligned_subsegments:
+            if 'language' not in subsegment:
+                subsegment['language'] = language
+            if 'probability' not in subsegment:
+                subsegment['probability'] = probability
         aligned_segments += aligned_subsegments
-
-    # create word_segments list
-    word_segments: List[SingleWordSegment] = []
-    for segment in aligned_segments:
-        word_segments += segment["words"]
-        
-    # Restore token probabilities if available
-    if return_token_probabilities and segment_tokens:
-        # Map original segments to aligned segments
-        original_to_aligned = {}
-        for i, orig_segment in enumerate(transcript):
-            for j, aligned_segment in enumerate(aligned_segments):
-                # Check if segments match by text and overlap in time
-                if (aligned_segment["text"] in orig_segment["text"] or 
-                    orig_segment["text"] in aligned_segment["text"]):
-                    # Check if times overlap
-                    orig_start, orig_end = orig_segment["start"], orig_segment["end"]
-                    aligned_start, aligned_end = aligned_segment["start"], aligned_segment["end"]
-                    
-                    # If times overlap, associate them
-                    if (orig_start <= aligned_end and orig_end >= aligned_start):
-                        if i not in original_to_aligned:
-                            original_to_aligned[i] = []
-                        original_to_aligned[i].append(j)
-        
-        # Transfer token probabilities to aligned segments
-        for orig_idx, aligned_indices in original_to_aligned.items():
-            if orig_idx in segment_tokens:
-                for aligned_idx in aligned_indices:
-                    if aligned_idx < len(aligned_segments):
-                        aligned_segments[aligned_idx]["token_probabilities"] = segment_tokens[orig_idx]
 
     result = {
         "segments": aligned_segments, 
-        "word_segments": word_segments,
+        "language": audio_language,
+        "language_probability": round(audio_language_probability, 3),
     }
-    
-    # Include language and language probability in result if provided
-    if language is not None:
-        print(f"Setting language to {language}")
-        result["language"] = language
-    if language_probability is not None:
-        print(f"Setting language probability to {language_probability}")
-        result["language_probability"] = language_probability
         
     return result
 
@@ -495,7 +451,8 @@ def get_wildcard_emission(frame_emission, tokens, blank_id):
     wildcard_mask = (tokens == -1)
 
     # Get scores for non-wildcard positions
-    regular_scores = frame_emission[tokens.clamp(min=0)]  # clamp to avoid -1 index
+    idx = tokens.clamp(min=0) if tokens.numel() > 0 else torch.tensor([0]) # clamp to avoid -1 index
+    regular_scores = frame_emission[idx]
 
     # Create a mask and compute the maximum value without modifying frame_emission
     max_valid_score = frame_emission.clone()   # Create a copy

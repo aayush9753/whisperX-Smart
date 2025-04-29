@@ -81,14 +81,14 @@ class SingleSegment(TypedDict):
         Transcribed text for the segment
     language: str
         Language of the segment
-    language_probability: float
+    probability: float
         Probability of the language of the segment
     """
     start: float
     end: float
     text: str
     language: str
-    language_probability: float
+    probability: float
 
 
 class SingleAlignedSegment(TypedDict):
@@ -105,8 +105,10 @@ class SingleAlignedSegment(TypedDict):
         End time of the segment in seconds
     text : str
         Transcribed text for the segment
-    token_probabilities : Optional[List[TokenProbability]]
-        List of token probabilities if requested during transcription
+    language: str
+        Language of the segment
+    probability: float
+        Probability of the language of the segment
     words : List[SingleWordSegment]
         List of words with timing information
     chars : Optional[List[SingleCharSegment]]
@@ -115,7 +117,8 @@ class SingleAlignedSegment(TypedDict):
     start: float
     end: float
     text: str
-    token_probabilities: Optional[List[TokenProbability]]
+    language: str
+    probability: float
     words: List[SingleWordSegment]
     chars: Optional[List[SingleCharSegment]]
 
