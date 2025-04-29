@@ -445,6 +445,9 @@ class FasterWhisperPipeline(Pipeline):
             if self.suppress_numerals and previous_suppress_tokens is not None:
                 self.options = replace(self.options, suppress_tokens=previous_suppress_tokens)
 
+            for lang_seg, lang_prob in zip(lang_segments, language_probabilities[lang]):
+                lang_seg['probability'] = lang_prob
+            
             all_segments.extend(lang_segments)
         
         # Sort all segments by start time
