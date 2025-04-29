@@ -311,7 +311,7 @@ If you use this in your research, please cite the paper:
 
 
 
-# Main Changes - Aayush
+# Main Changes
 
 1. **Custom Implementation of Silero VAD**
    - This class implements a custom wrapper around the Silero VAD model to detect speech segments in audio files
@@ -326,9 +326,11 @@ If you use this in your research, please cite the paper:
    - Gives each VAD segment individually to be transcribed
    - Improves handling of speech segments for better transcription quality
 
-4. **Transcrition and Token Probabilities**
+4. **Transcrition and Token Probabilities** (asr_openai_whisper)
    - Improved and more accurate language detection
    - Returns token probabilities for each segment
+
+5. **Chunk level language detection in asr.py**
 
 # Installation
   ```
